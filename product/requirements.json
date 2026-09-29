@@ -109,6 +109,19 @@
         "diameter": 6
       },
       "source": "default"
+    },
+    "underside_decor": {
+      "value": "飞船底部环形均布八个半圆推进器装饰",
+      "source": "user"
+    },
+    "underside_decor_geometry": {
+      "value": {
+        "shape": "一体凸起半球",
+        "diameter_mm": 16,
+        "ring_radius_mm": 60,
+        "phase_deg": 22.5
+      },
+      "source": "default"
     }
   },
   "open_questions": []

@@ -54,7 +54,7 @@
           "target": "body_lower",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/body_lower/000-body_lower.py",
-          "sha256": "e13d6a8e94bc731ea531acfdcae64253d87ea0fb47427c7c12fd2501b317dbe8"
+          "sha256": "ce48eea9ded0d70cdccdc327096891f989476fa76a18076042ad96edb13613fc"
         }
       ],
       "dependencies": []
@@ -162,7 +162,7 @@
       "label": "飞碟封闭下壳",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "64915656ffd90f0f3ddf0010c96947d2174b852467614b1ad3fd78dfcd385297",
+      "shapeHash": "584a83f7ca33090ca8bfe9746b6e274b249d033302b1da94f806849364568b02",
       "transform": {
         "positionMm": [
           0,
@@ -240,7 +240,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-29T04:11:50.167Z",
+  "updatedAt": "2026-09-29T04:14:16.426Z",
   "parameters": {
     "shade": {
       "shade_base_diameter": 114,
@@ -325,7 +325,11 @@
       "lower_holder_wall": 2.5,
       "body_wire_diameter": 6,
       "body_wire_z": 13,
-      "lower_wire_exit_radius": 63
+      "lower_wire_exit_radius": 63,
+      "lower_thruster_count": 8,
+      "lower_thruster_diameter": 16,
+      "lower_thruster_ring_radius": 60,
+      "lower_thruster_phase_deg": 22.5
     },
     "join_keys": {
       "key_left_width": 8,

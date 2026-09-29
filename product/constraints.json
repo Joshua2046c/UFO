@@ -59,5 +59,14 @@
       "key_max_width_mm": 8.28,
       "fit": "nominal close sliding fit, no positive latch; calibrate physical insertion force"
     }
-  ]
+  ],
+  "underside_decor": {
+    "count": 8,
+    "diameter_mm": 16,
+    "ring_radius_mm": 60,
+    "phase_deg": 22.5,
+    "integration": "fused into body_lower",
+    "source": "default",
+    "count_source": "user"
+  }
 }

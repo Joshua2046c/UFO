@@ -1,3 +1,4 @@
+from math import sin, cos, pi, atan, degrees
 body_diameter=param("body_diameter",150.0)
 body_split_height=param("body_split_height",16.0)
 lower_wall=param("lower_wall",2.4)
@@ -20,6 +21,10 @@ key_socket_width=param("key_socket_width",8.3)
 key_socket_depth=param("key_socket_depth",5.4)
 lower_socket_pad_width=param("lower_socket_pad_width",14.0)
 lower_socket_pad_base=param("lower_socket_pad_base",4.0)
+lower_thruster_count=param("lower_thruster_count",8)
+lower_thruster_diameter=param("lower_thruster_diameter",16.0)
+lower_thruster_ring_radius=param("lower_thruster_ring_radius",60.0)
+lower_thruster_phase_deg=param("lower_thruster_phase_deg",22.5)
 # User supplied lamp envelope.
 LAMP_D=60.0
 LAMP_T=8.0
@@ -36,6 +41,18 @@ with BuildPart() as lower_build:
         Polygon(*pts,align=None)
     revolve(axis=Axis.Z)
 body_lower=lower_build.part
+# Eight integral hemispherical bosses follow the underside cone normal.
+slope=(z-3)/((r-1)-(hub+2))
+mount_z=(lower_thruster_ring_radius-(hub+2))*slope
+dome_r=lower_thruster_diameter/2
+embed=lower_wall/2
+dome=Sphere(dome_r) & Pos(0,0,(dome_r-embed)/2)*Box(lower_thruster_diameter+lower_wall,lower_thruster_diameter+lower_wall,dome_r+embed)
+for i in range(int(lower_thruster_count)):
+    angle=lower_thruster_phase_deg+360*i/int(lower_thruster_count)
+    a=angle*pi/180
+    boss=Pos(lower_thruster_ring_radius*cos(a),lower_thruster_ring_radius*sin(a),mount_z)*Rot(0,0,angle)*Rot(0,180-degrees(atan(slope)),0)*dome
+    assert (body_lower & boss).volume > 1.0
+    body_lower=body_lower+boss
 for x in [-key_spacing/2,key_spacing/2]:
     body_lower=body_lower+Pos(x,0,(s+lower_socket_pad_base)/2)*Box(lower_socket_pad_width,lower_socket_pad_width,s-lower_socket_pad_base)
     body_lower=body_lower-Pos(x,0,s-key_socket_depth/2)*Box(key_socket_width,key_socket_width,key_socket_depth)

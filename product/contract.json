@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "printable_part",
-  "summary": "上下分壳、双内部方块连接的飞碟灯",
+  "summary": "上下分壳、双内部方块连接、底部八个半球推进器装饰的飞碟灯",
   "required_interfaces": [
     {
       "id": "lamp_fit",
