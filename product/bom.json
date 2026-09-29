@@ -1,6 +1,6 @@
 {
   "bom_ready": true,
-  "requirements_digest": "56dd64811b9ab4735561bc26f8d994ad20b773a94ab3d3711267bfbda187abb4",
+  "requirements_digest": "f810ef9249af9dc474c95174cf56c4a746396e0cb27b89802bfd2892430f7640",
   "items": [
     {
       "id": "body",
@@ -40,7 +40,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "半透明绿色PETG",
-      "notes": "底径114 mm，高140 mm加10 mm插颈；薄壁1.2 mm，颈壁2.5 mm；完整无缺口底圈。正面下部按用户最新黑色奶牛剪影贯穿镂空，头朝右上18°；按原图比例名义32×28.46 mm，中心高38 mm。保留图中牛角、四条腿、乳房及上翘尾巴，无内部斑块或眼睛；背面完整。"
+      "notes": "底径114 mm，高140 mm加10 mm插颈；薄壁1.2 mm，颈壁2.5 mm；完整底圈。正面奶牛镂空按最新黄底黑色剪影图左右镜像，头朝右上18°，四肢、乳房、下垂尾巴及轮廓转角依原图；默认宽32 mm、高19.88 mm，中心高38 mm，保持原图比例。背面完整。"
     },
     {
       "id": "lamp",

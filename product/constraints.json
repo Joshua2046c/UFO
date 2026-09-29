@@ -81,7 +81,7 @@
   "shade_cow_cutout": {
     "nominal_size_mm": [
       32,
-      28.4556113
+      19.87703318377484
     ],
     "center_x_z_mm": [
       0,
@@ -103,10 +103,14 @@
       "source": "user"
     },
     "outline_details": {
-      "value": "traced latest user silhouette: raised tufted tail, four legs, horns, ears, udder",
+      "value": "mirrored latest angular cow silhouette: four legs, horns, ears, udder, downward tufted tail",
       "source": "user"
     },
-    "reference_image": "product/references/uploads/20260929T155207680Z-1-ishot-2026-09-29-11-51-55.png"
+    "reference_image": "product/references/uploads/20260929T163649070Z-1-ishot-2026-09-30-12-35-28.png",
+    "horizontal_mirror": {
+      "value": true,
+      "source": "user"
+    }
   },
   "plain_shade": {
     "same_profile_as": "shade",

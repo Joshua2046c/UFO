@@ -35,7 +35,7 @@
     {
       "id": "cow_cutout",
       "kind": "opening",
-      "description": "灯罩正面下部按最新黑色奶牛剪影图完整轮廓镂空，头朝右并倾斜18°，牛角、四条腿、乳房及上翘尾巴依参考图",
+      "description": "灯罩正面下部按最新黄底黑色奶牛剪影图左右镜像后完整轮廓镂空，头朝右并倾斜18°，轮廓转角、四条腿、牛角、乳房及下垂尾巴依参考图",
       "source": "user_requested",
       "required": true
     },
