@@ -28,8 +28,8 @@
       "source": "user"
     },
     "wire_route": {
-      "value": "飞碟后侧6 mm圆形出线孔；不再经灯罩底缘出线",
-      "source": "default"
+      "value": "下半壳内部采用向上敞开的走线凹槽，后侧外缘出口也位于下半壳；先放线再合壳",
+      "source": "user"
     },
     "body_diameter_mm": {
       "value": 150,
@@ -95,6 +95,10 @@
     },
     "lighting_direction": {
       "value": "灯组装在飞碟内部，默认朝下，可选翻面朝上",
+      "source": "user"
+    },
+    "lamp_mount_owner": {
+      "value": "灯组完整定位及承托结构位于飞碟下半壳",
       "source": "user"
     }
   },

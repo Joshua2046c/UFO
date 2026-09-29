@@ -1,4 +1,3 @@
-
 from bd_warehouse.thread import Thread
 from math import sin, cos, pi
 body_diameter=param("body_diameter",150.0)
@@ -18,8 +17,6 @@ thread_root_width=param("thread_root_width",2.2)
 thread_tip_width=param("thread_tip_width",0.6)
 body_thread_clearance=param("body_thread_clearance",0.35)
 body_thread_axial_clearance=param("body_thread_axial_clearance",0.25)
-body_wire_diameter=param("body_wire_diameter",6.0)
-body_wire_z=param("body_wire_z",19.5)
 body_porthole_diameter=param("body_porthole_diameter",11.0)
 body_porthole_depth=param("body_porthole_depth",0.65)
 body_porthole_radius=param("body_porthole_radius",56.0)
@@ -40,7 +37,7 @@ z=body_rim_height
 bore=thread_major/2-thread_depth+body_thread_clearance
 pocket=LAMP_D/2+body_lamp_clearance
 # Closed upper shell; base frame is the waist mating plane.
-pts=[(r,s),(r-3,z+4),(hub+4,h-2),(hub,h),(bore,h),(bore,body_seat_z+LAMP_T+body_lamp_headroom),(pocket,body_seat_z+LAMP_T+body_lamp_headroom),(pocket,s),(hub-3,s),(hub-3,h-body_wall-2),(hub+3,h-body_wall-2),(r-6,s)]
+pts=[(r,s),(r-3,z+4),(hub+4,h-2),(hub,h),(bore,h),(bore,s),(hub-3,s),(hub-3,h-body_wall-2),(hub+3,h-body_wall-2),(r-6,s)]
 with BuildPart() as upper_build:
     with BuildSketch(Plane.XZ):
         Polygon(*[(x,y-s) for x,y in pts],align=None)
@@ -52,8 +49,7 @@ body=body-Pos(0,0,h-thread_length-0.5-s)*thread_cutter
 for x in [-key_spacing/2,key_spacing/2]:
     body=body+Pos(x,0,body_socket_pad_height/2)*Box(body_socket_pad_width,body_socket_pad_width,body_socket_pad_height)
     body=body-Pos(x,0,key_socket_depth/2)*Box(key_socket_width,key_socket_width,key_socket_depth)
-# Cable exits to rear of saucer, clear of both keys and the shade.
-body=body-Pos(0,-r/2,body_wire_z-s)*Rot(90,0,0)*Cylinder(body_wire_diameter/2,r+2)
+# Cable is laid into the lower shell; upper shell closes the open notch.
 pr=body_porthole_radius
 surface=(z+4)+(r-3-pr)*((h-2)-(z+4))/((r-3)-(hub+4))
 for i in range(int(body_porthole_count)):

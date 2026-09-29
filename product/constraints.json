@@ -4,13 +4,17 @@
     "thickness_mm": 8,
     "pocket_diameter_mm": 61,
     "pocket_depth_mm": 9,
-    "light_aperture_mm": 56
+    "light_aperture_mm": 56,
+    "mount_owner": "body_lower"
   },
   "cable": {
     "passage_diameter_mm": 6,
     "source": "default",
-    "route": "从灯组侧面经飞碟后侧引出；灯罩无缺口",
-    "note": "适配引线，未知插头未验证"
+    "route": "下半壳灯座后侧开放U形槽通向下半壳后缘U形出口，上壳合拢后盖住；从上方放线",
+    "note": "默认槽宽6 mm、槽底全局z=150 mm、圆弧中心z=153 mm；几何检查5.6 mm引线通道，原配引线实际尺寸待试装",
+    "channel_width_mm": 6,
+    "route_center_z_mm": 153,
+    "open_from_top": true
   },
   "connections": [
     {

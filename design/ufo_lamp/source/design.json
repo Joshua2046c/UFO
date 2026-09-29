@@ -26,7 +26,7 @@
           "target": "body",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/body/000-body.py",
-          "sha256": "fb4f883e44384cad674f040d8cc1f3c5a1d4bed00d69e96562a67bc792f485bf"
+          "sha256": "a8cedd0c05c84e5172630587da87c27863e86a77827ce7efb1905cc03007c051"
         }
       ],
       "dependencies": []
@@ -54,7 +54,7 @@
           "target": "body_lower",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/body_lower/000-body_lower.py",
-          "sha256": "14b2947d2fc4c49ef6d5d63d1e8f70d9648f5a0e90134ecf8028bb3de7d3ea7d"
+          "sha256": "38f0e917bd1aeec5fad1a93798da4741ec3d37048974b190086b95cbb05fec96"
         }
       ],
       "dependencies": []
@@ -108,7 +108,7 @@
       "label": "飞碟上壳",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "5b3dd796f460d5c2db6f69e70775db62fc2e67ea61548b9735b93a75a3faeaed",
+      "shapeHash": "d33af94322b79f948db71f83433dcb6e08ff9df1c7bd8276eb676954d0e0646b",
       "transform": {
         "positionMm": [
           0,
@@ -162,7 +162,7 @@
       "label": "飞碟封闭下壳",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "57d342f61a1f9f6bfdcdc157a004745f9148064b63edf830973448b5dd33a647",
+      "shapeHash": "0534c00b147baace9fd8fe1bed60eb051043a558e58294e5f55d0dd6f2d3d4c9",
       "transform": {
         "positionMm": [
           0,
@@ -240,7 +240,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-29T03:27:52.027Z",
+  "updatedAt": "2026-09-29T03:40:35.903Z",
   "parameters": {
     "shade": {
       "shade_base_diameter": 114,
@@ -320,7 +320,11 @@
       "key_socket_width": 8.3,
       "key_socket_depth": 5.4,
       "lower_socket_pad_width": 14,
-      "lower_socket_pad_base": 4
+      "lower_socket_pad_base": 4,
+      "body_lamp_headroom": 1,
+      "lower_holder_wall": 2.5,
+      "body_wire_diameter": 6,
+      "body_wire_z": 13
     },
     "join_keys": {
       "key_left_width": 8,
