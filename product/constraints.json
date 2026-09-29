@@ -77,5 +77,27 @@
     "integration": "fused into body_lower",
     "source": "default",
     "count_source": "user"
+  },
+  "shade_cow_cutout": {
+    "nominal_size_mm": [
+      32,
+      24
+    ],
+    "center_x_z_mm": [
+      0,
+      38
+    ],
+    "front_normal": [
+      0,
+      -1,
+      0
+    ],
+    "tilt_deg": 18,
+    "tilt_direction": "head up-right",
+    "bridge_width_mm": 1.2,
+    "cut": "front wall only",
+    "minimum_solids": "shade remains one solid",
+    "source": "default",
+    "angle_source": "user"
   }
 }

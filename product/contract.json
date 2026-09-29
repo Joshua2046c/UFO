@@ -31,6 +31,13 @@
       "description": "两半船身通过两个内部方形插块连接",
       "source": "user_requested",
       "required": true
+    },
+    {
+      "id": "cow_cutout",
+      "kind": "opening",
+      "description": "灯罩正面下部奶牛造型镂空，头朝右并倾斜18°",
+      "source": "user_requested",
+      "required": true
     }
   ],
   "external_references": [
@@ -70,7 +77,8 @@
           "lamp_fit",
           "dome_drop_fit",
           "shade_insert",
-          "body_square_join"
+          "body_square_join",
+          "cow_cutout"
         ],
         "reference_ids": [
           "user_images",

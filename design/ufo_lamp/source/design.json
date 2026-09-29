@@ -12,7 +12,7 @@
           "target": "shade",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/shade/000-shade.py",
-          "sha256": "6ff71b3bb0c4c028eb50549126a93c544869c92d4503fccd36d96c8b31dd5bf7"
+          "sha256": "58796c046171243189b95430c7900aeed6060013e0272028cc4c50608413fe08"
         }
       ],
       "dependencies": []
@@ -81,7 +81,7 @@
       "label": "绿色光束灯罩",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "919ae53b55a2fa179d52074691c489f257e1a748b4a440db2163c362682f810f",
+      "shapeHash": "22646d571dc3f2490974c62fcb18f2c39c996c6c544160fecdd0aea796bbd813",
       "transform": {
         "positionMm": [
           0,
@@ -240,7 +240,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-29T05:39:28.294Z",
+  "updatedAt": "2026-09-29T15:04:16.386Z",
   "parameters": {
     "shade": {
       "shade_base_diameter": 114,
@@ -257,7 +257,14 @@
       "shade_cable_width": 6,
       "shade_cable_height": 6,
       "shade_neck_cable_width": 6,
-      "shade_neck_cable_depth": 7
+      "shade_neck_cable_depth": 7,
+      "shade_cow_width": 32,
+      "shade_cow_height": 24,
+      "shade_cow_center_x": 0,
+      "shade_cow_center_z": 38,
+      "shade_cow_tilt_deg": 18,
+      "shade_cow_bridge_width": 1.2,
+      "shade_cow_eye_diameter": 1.8
     },
     "body": {
       "body_diameter": 150,
