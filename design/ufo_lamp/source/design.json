@@ -12,7 +12,7 @@
           "target": "shade",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/shade/000-shade.py",
-          "sha256": "aacb2f7874f3f16aaa82e91ce5c94b4be32c32df1df3829a4c76d95efdf8934e"
+          "sha256": "6ff71b3bb0c4c028eb50549126a93c544869c92d4503fccd36d96c8b31dd5bf7"
         }
       ],
       "dependencies": []
@@ -26,7 +26,7 @@
           "target": "body",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/body/000-body.py",
-          "sha256": "856b13939838e57aeca8f408ecff2cf01a0ac4089e9e13637ae2be5f40c18774"
+          "sha256": "fb4f883e44384cad674f040d8cc1f3c5a1d4bed00d69e96562a67bc792f485bf"
         }
       ],
       "dependencies": []
@@ -44,6 +44,34 @@
         }
       ],
       "dependencies": []
+    },
+    {
+      "id": "body_lower",
+      "label": "body_lower",
+      "cells": [
+        {
+          "id": "body_lower",
+          "target": "body_lower",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/body_lower/000-body_lower.py",
+          "sha256": "14b2947d2fc4c49ef6d5d63d1e8f70d9648f5a0e90134ecf8028bb3de7d3ea7d"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "join_keys",
+      "label": "join_keys",
+      "cells": [
+        {
+          "id": "join_keys",
+          "target": "join_keys",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/join_keys/000-join_keys.py",
+          "sha256": "e5dbc91c7bfadcdd179c94e8de4c402badc82a70a0ee93abb66e31cdc69b67cf"
+        }
+      ],
+      "dependencies": []
     }
   ],
   "objects": [
@@ -53,7 +81,7 @@
       "label": "绿色光束灯罩",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "e14c9c5be2d7a5c54a4f59338ad4cafbf0f6ac42147ff02acba1c4f372f2a209",
+      "shapeHash": "919ae53b55a2fa179d52074691c489f257e1a748b4a440db2163c362682f810f",
       "transform": {
         "positionMm": [
           0,
@@ -77,15 +105,15 @@
     {
       "id": "body",
       "target": "body",
-      "label": "飞船本体",
+      "label": "飞碟上壳",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "6ce48cafadd706e20ffaae62dbea1a6a709563a5dc5d34acf089396dbbb0ca9a",
+      "shapeHash": "5b3dd796f460d5c2db6f69e70775db62fc2e67ea61548b9735b93a75a3faeaed",
       "transform": {
         "positionMm": [
           0,
           0,
-          140
+          156
         ],
         "rotationDeg": [
           0,
@@ -127,11 +155,92 @@
         ]
       },
       "datums": []
+    },
+    {
+      "id": "body_lower",
+      "target": "body_lower",
+      "label": "飞碟封闭下壳",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "57d342f61a1f9f6bfdcdc157a004745f9148064b63edf830973448b5dd33a647",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          140
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_left",
+      "target": "join_keys",
+      "label": "左连接方块",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "4db4317e22f0128a0eb7a0fd2087a7c1e1bdf622d8d02e44de70d96b79b1a2a1",
+      "transform": {
+        "positionMm": [
+          -46,
+          0,
+          156
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_right",
+      "target": "join_keys",
+      "label": "右连接方块",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "336cdd8e52efdbc20ac50b7f35b42796a5b379b9a5ec80b0562d738eff20d543",
+      "transform": {
+        "positionMm": [
+          46,
+          0,
+          156
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
     }
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-29T02:53:54.366Z",
+  "updatedAt": "2026-09-29T03:27:52.027Z",
   "parameters": {
     "shade": {
       "shade_base_diameter": 114,
@@ -156,14 +265,7 @@
       "body_wall": 2.4,
       "body_hub_diameter": 80,
       "body_rim_height": 13,
-      "body_rim_band": 2,
-      "spigot_diameter": 68,
-      "spigot_length": 10,
-      "body_socket_clearance": 0.3,
-      "body_socket_headroom": 0.8,
       "body_lamp_clearance": 0.5,
-      "body_seat_thickness": 2.2,
-      "body_light_aperture": 56,
       "body_lamp_headroom": 1,
       "thread_major": 72,
       "thread_depth": 1.8,
@@ -174,11 +276,18 @@
       "body_thread_clearance": 0.35,
       "body_thread_axial_clearance": 0.25,
       "body_wire_diameter": 6,
-      "body_wire_radius": 32,
       "body_porthole_diameter": 11,
       "body_porthole_depth": 0.65,
       "body_porthole_radius": 56,
-      "body_porthole_count": 8
+      "body_porthole_count": 8,
+      "body_split_height": 16,
+      "body_seat_z": 13,
+      "body_wire_z": 19.5,
+      "key_spacing": 92,
+      "key_socket_width": 8.3,
+      "key_socket_depth": 5.4,
+      "body_socket_pad_width": 14,
+      "body_socket_pad_height": 9
     },
     "cockpit": {
       "cockpit_diameter": 80,
@@ -193,6 +302,39 @@
       "thread_length": 9,
       "thread_root_width": 2.2,
       "thread_tip_width": 0.6
+    },
+    "body_lower": {
+      "body_diameter": 150,
+      "body_split_height": 16,
+      "lower_wall": 2.4,
+      "body_hub_diameter": 80,
+      "body_rim_height": 13,
+      "spigot_diameter": 68,
+      "spigot_length": 10,
+      "body_socket_clearance": 0.3,
+      "body_socket_headroom": 0.8,
+      "body_lamp_clearance": 0.5,
+      "body_seat_thickness": 2.2,
+      "body_light_aperture": 56,
+      "key_spacing": 92,
+      "key_socket_width": 8.3,
+      "key_socket_depth": 5.4,
+      "lower_socket_pad_width": 14,
+      "lower_socket_pad_base": 4
+    },
+    "join_keys": {
+      "key_left_width": 8,
+      "key_left_length": 10,
+      "key_left_lead_chamfer": 0.5,
+      "key_left_rib_radius": 0.4,
+      "key_left_rib_projection": 0.14,
+      "key_left_rib_end_margin": 1,
+      "key_right_width": 8,
+      "key_right_length": 10,
+      "key_right_lead_chamfer": 0.5,
+      "key_right_rib_radius": 0.4,
+      "key_right_rib_projection": 0.14,
+      "key_right_rib_end_margin": 1
     }
   }
 }

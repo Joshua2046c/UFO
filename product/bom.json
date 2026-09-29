@@ -1,22 +1,38 @@
 {
   "bom_ready": true,
-  "requirements_digest": "3abcc748b98a991014df870ec080f4d0296ae4754f6567f510e95e0529beafd6",
+  "requirements_digest": "8c9cd0efa4d844386373afd61fda17a12f26c4aa5e56325459ac1c1b76351780",
   "items": [
     {
       "id": "body",
-      "name": "飞船本体",
+      "name": "飞碟上壳",
       "quantity": 1,
       "type": "custom_printed",
       "material": "银灰PETG",
-      "notes": "外径150 mm；61×9 mm灯槽；6 mm线孔；内螺纹72 mm、螺距3 mm。"
+      "notes": "直径150 mm，上壳保留座舱内螺纹，后侧6 mm出线孔，两个方孔插座。"
+    },
+    {
+      "id": "body_lower",
+      "name": "飞碟封闭下壳",
+      "quantity": 1,
+      "type": "custom_printed",
+      "material": "银灰PETG",
+      "notes": "封闭碟底、中央56 mm出光孔；61 mm灯槽适配60×8 mm灯组；两个方孔插座。"
+    },
+    {
+      "id": "join_keys",
+      "name": "飞碟内部方形连接插块",
+      "quantity": 2,
+      "type": "custom_printed",
+      "material": "PETG",
+      "notes": "两枚独立8×8×10 mm方块，四面0.14 mm细筋，外包络8.28 mm，配8.3 mm方孔；插接定位非倒扣锁止，需试打印校准。"
     },
     {
       "id": "cockpit",
       "name": "飞船座舱",
       "quantity": 1,
       "type": "custom_printed",
-      "material": "暖黄色PETG",
-      "notes": "外径80 mm，圆顶高34 mm；右旋外牙，与船身旋拧连接。"
+      "material": "半透明暖黄色PETG（上照选用）",
+      "notes": "保留72 mm大径右旋螺纹；灯组翻面时光线朝向座舱，透光效果取决于耗材。"
     },
     {
       "id": "shade",
@@ -24,7 +40,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "半透明绿色PETG",
-      "notes": "底径114 mm，高140 mm加10 mm插颈；薄壁1.2 mm，颈壁2.5 mm，带上下走线槽。"
+      "notes": "底径114 mm，高140 mm加10 mm插颈；薄壁1.2 mm，颈壁2.5 mm；完整无缺口底圈。"
     },
     {
       "id": "lamp",

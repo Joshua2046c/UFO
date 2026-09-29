@@ -9,15 +9,8 @@
   "cable": {
     "passage_diameter_mm": 6,
     "source": "default",
-    "note": "不假设未知连接器可穿过，先穿线再装灯",
-    "neck_notch_mm": {
-      "width": 6,
-      "depth": 7
-    },
-    "bottom_notch_mm": {
-      "width": 6,
-      "height": 6
-    }
+    "route": "从灯组侧面经飞碟后侧引出；灯罩无缺口",
+    "note": "适配引线，未知插头未验证"
   },
   "connections": [
     {
@@ -29,6 +22,32 @@
       "id": "shade_insert",
       "implementation": "free",
       "reason": "重力落座滑动配合"
+    },
+    {
+      "id": "body_square_join",
+      "implementation": "free",
+      "reason": "用户指定两个内部方块连接上下壳",
+      "key_nominal_mm": [
+        8,
+        8,
+        10
+      ],
+      "socket_width_mm": 8.3,
+      "socket_depth_mm": 5.4,
+      "key_centers_mm": [
+        [
+          -46,
+          0,
+          156
+        ],
+        [
+          46,
+          0,
+          156
+        ]
+      ],
+      "key_max_width_mm": 8.28,
+      "fit": "nominal close sliding fit, no positive latch; calibrate physical insertion force"
     }
   ]
 }

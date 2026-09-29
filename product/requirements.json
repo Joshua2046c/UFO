@@ -5,12 +5,12 @@
       "source": "default"
     },
     "form_factor": {
-      "value": "三件式飞船灯：飞船本体、螺纹座舱、绿色底座灯罩",
+      "value": "飞船本体、螺纹座舱、绿色灯罩三个外观组件；飞船本体由两半壳和两个方块连接",
       "source": "user"
     },
     "part_count": {
-      "value": 3,
-      "source": "user"
+      "value": 6,
+      "source": "default"
     },
     "lamp_envelope_mm": {
       "value": {
@@ -28,8 +28,8 @@
       "source": "user"
     },
     "wire_route": {
-      "value": "灯组处预留穿线洞",
-      "source": "user"
+      "value": "飞碟后侧6 mm圆形出线孔；不再经灯罩底缘出线",
+      "source": "default"
     },
     "body_diameter_mm": {
       "value": 150,
@@ -76,6 +76,26 @@
     "base_board": {
       "value": "不需要控制板；适配用户指定尺寸的现成圆饼灯组",
       "source": "default"
+    },
+    "body_split": {
+      "value": "飞碟从中间切开两半，由两个内部方块插接连接",
+      "source": "user"
+    },
+    "split_implementation": {
+      "value": "沿腰线水平分上下壳，采用两枚独立方形插块",
+      "source": "default"
+    },
+    "body_bottom": {
+      "value": "底面封闭碟壳造型，中央保留下照出光孔",
+      "source": "user"
+    },
+    "shade_bottom": {
+      "value": "灯罩底部无凹槽",
+      "source": "user"
+    },
+    "lighting_direction": {
+      "value": "灯组装在飞碟内部，默认朝下，可选翻面朝上",
+      "source": "user"
     }
   },
   "open_questions": []

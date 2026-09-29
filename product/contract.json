@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "printable_part",
-  "summary": "三个部件组成的飞船灯机械外壳",
+  "summary": "上下分壳、双内部方块连接的飞碟灯",
   "required_interfaces": [
     {
       "id": "lamp_fit",
@@ -24,6 +24,13 @@
       "description": "薄壁灯罩的加厚上端插入船身并肩面支撑",
       "source": "user_requested",
       "required": true
+    },
+    {
+      "id": "body_square_join",
+      "kind": "mechanical_connection",
+      "description": "两半船身通过两个内部方形插块连接",
+      "source": "user_requested",
+      "required": true
     }
   ],
   "external_references": [
@@ -40,13 +47,12 @@
     }
   ],
   "assembly_story": {
-    "installation": "穿线，将灯组朝下置于船身环形托边，旋入座舱，将船身套在灯罩上端加厚颈并落到肩面。",
-    "maintenance": "提起船身、逆时针旋开座舱后取出灯组。",
+    "installation": "将灯组发光面朝下置于下壳，穿线至飞碟后侧孔，插入两个方块，合上上壳，旋入座舱，落座到灯罩插颈。",
+    "maintenance": "拔开上下壳，取出方块及灯组，可翻转灯组使发光面向上。",
     "user_access": [
-      "座舱螺纹口",
-      "灯组托槽",
-      "走线孔",
-      "底缘出线缺口"
+      "上下壳接缝",
+      "后侧出线孔",
+      "座舱螺纹口"
     ]
   },
   "cad": {
@@ -55,7 +61,7 @@
       {
         "role": "lamp_housing",
         "design_id": "ufo_lamp",
-        "description": "飞船本体、座舱及绿色灯罩",
+        "description": "飞碟上下壳、两枚连接方块、螺纹座舱和无底部缺口的绿色灯罩",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
@@ -63,7 +69,8 @@
         "interface_ids": [
           "lamp_fit",
           "dome_thread",
-          "shade_insert"
+          "shade_insert",
+          "body_square_join"
         ],
         "reference_ids": [
           "user_images",
