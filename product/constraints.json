@@ -10,11 +10,17 @@
   "cable": {
     "passage_diameter_mm": 6,
     "source": "default",
-    "route": "下半壳灯座后侧开放U形槽通向下半壳后缘U形出口，上壳合拢后盖住；从上方放线",
-    "note": "默认槽宽6 mm、槽底全局z=150 mm、圆弧中心z=153 mm；几何检查5.6 mm引线通道，原配引线实际尺寸待试装",
+    "route": "灯座后侧开放U形槽进入内腔，转弯向下穿过底部斜面圆孔；外缘完整",
+    "note": "内部槽宽6 mm、圆弧中心z=153 mm，外孔直径6 mm；未验证未知插头尺寸和原配线弯曲半径",
     "channel_width_mm": 6,
     "route_center_z_mm": 153,
-    "open_from_top": true
+    "open_from_top": false,
+    "internal_groove_open_from_top": true,
+    "exit_center_xy_mm": [
+      0,
+      -63
+    ],
+    "exit_axis": "z"
   },
   "connections": [
     {

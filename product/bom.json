@@ -1,6 +1,6 @@
 {
   "bom_ready": true,
-  "requirements_digest": "b693a0b7c7d1d51aa29d12326e2f9244a3aa932ff2dd5706ffcf1d48e86b6093",
+  "requirements_digest": "c5954a34c5b0bfa04e615e0a3770a9ca28d741e6060e02737baa330d08e3dcbe",
   "items": [
     {
       "id": "body",
@@ -16,7 +16,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "银灰PETG",
-      "notes": "封闭碟底、中央56 mm出光孔；完整61 mm内径、9 mm有效高度灯座容纳60×8 mm灯组；后侧6 mm宽开放U形走线槽及外缘出口；两个方孔插座。"
+      "notes": "封闭碟底、中央56 mm出光孔；完整61 mm内径、9 mm有效高度灯座适配60×8 mm灯组；内部6 mm宽开放U形走线槽，底部斜面6 mm圆形出线孔，孔中心距轴63 mm；外缘完整；两个方孔插座。"
     },
     {
       "id": "join_keys",

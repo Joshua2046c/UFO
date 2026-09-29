@@ -14,6 +14,7 @@ body_lamp_headroom=param("body_lamp_headroom",1.0)
 lower_holder_wall=param("lower_holder_wall",2.5)
 body_wire_diameter=param("body_wire_diameter",6.0)
 body_wire_z=param("body_wire_z",13.0)
+lower_wire_exit_radius=param("lower_wire_exit_radius",63.0)
 key_spacing=param("key_spacing",92.0)
 key_socket_width=param("key_socket_width",8.3)
 key_socket_depth=param("key_socket_depth",5.4)
@@ -38,13 +39,18 @@ body_lower=lower_build.part
 for x in [-key_spacing/2,key_spacing/2]:
     body_lower=body_lower+Pos(x,0,(s+lower_socket_pad_base)/2)*Box(lower_socket_pad_width,lower_socket_pad_width,s-lower_socket_pad_base)
     body_lower=body_lower-Pos(x,0,s-key_socket_depth/2)*Box(key_socket_width,key_socket_width,key_socket_depth)
-# Open U-shaped route: the lead is laid in from above, including the rim exit.
+# Open internal U-groove stops in the annular cavity; the outer rim stays intact.
+route_length=hub+lower_wall
 route_top=seat+LAMP_T+body_lamp_headroom+lower_wall
-body_lower=body_lower-Pos(0,-r/2,body_wire_z)*Rot(90,0,0)*Cylinder(body_wire_diameter/2,r+2)
-body_lower=body_lower-Pos(0,-r/2,(body_wire_z+route_top)/2)*Box(body_wire_diameter,r+2,route_top-body_wire_z)
+body_lower=body_lower-Pos(0,-route_length/2,body_wire_z)*Rot(90,0,0)*Cylinder(body_wire_diameter/2,route_length)
+body_lower=body_lower-Pos(0,-route_length/2,(body_wire_z+route_top)/2)*Box(body_wire_diameter,route_length,route_top-body_wire_z)
+# Downward exit on the underside slope at the user's marked rear location.
+exit_tool=Pos(0,-lower_wire_exit_radius,s/2)*Cylinder(body_wire_diameter/2,s+2*lower_wall)
+body_lower=body_lower-exit_tool
 assert len(body_lower.solids())==1
+assert (body_lower & exit_tool).volume < 1e-5
 # A cable smaller than the nominal 6 mm channel clears the lower route.
-wire_check=Pos(0,-r/2,body_wire_z)*Rot(90,0,0)*Cylinder((body_wire_diameter-0.4)/2,r+2)
+wire_check=Pos(0,-route_length/2,body_wire_z)*Rot(90,0,0)*Cylinder((body_wire_diameter-0.4)/2,route_length)
 assert (body_lower & wire_check).volume < 1e-5
 lamp_envelope=Pos(0,0,seat)*Cylinder(LAMP_D/2,LAMP_T,align=(Align.CENTER,Align.CENTER,Align.MIN))
 assert (body_lower & lamp_envelope).volume < 1e-5

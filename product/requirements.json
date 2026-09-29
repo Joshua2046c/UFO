@@ -28,7 +28,7 @@
       "source": "user"
     },
     "wire_route": {
-      "value": "下半壳内部采用向上敞开的走线凹槽，后侧外缘出口也位于下半壳；先放线再合壳",
+      "value": "内部保留开放放线凹槽；外部出线孔移至用户标注的下半壳底部斜面，封闭原外缘缺口",
       "source": "user"
     },
     "body_diameter_mm": {
@@ -100,6 +100,15 @@
     "lamp_mount_owner": {
       "value": "灯组完整定位及承托结构位于飞碟下半壳",
       "source": "user"
+    },
+    "wire_exit_position_mm": {
+      "value": {
+        "x": 0,
+        "y": -63,
+        "axis": "z",
+        "diameter": 6
+      },
+      "source": "default"
     }
   },
   "open_questions": []

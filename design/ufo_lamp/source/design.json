@@ -54,7 +54,7 @@
           "target": "body_lower",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/body_lower/000-body_lower.py",
-          "sha256": "38f0e917bd1aeec5fad1a93798da4741ec3d37048974b190086b95cbb05fec96"
+          "sha256": "e13d6a8e94bc731ea531acfdcae64253d87ea0fb47427c7c12fd2501b317dbe8"
         }
       ],
       "dependencies": []
@@ -162,7 +162,7 @@
       "label": "飞碟封闭下壳",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "0534c00b147baace9fd8fe1bed60eb051043a558e58294e5f55d0dd6f2d3d4c9",
+      "shapeHash": "64915656ffd90f0f3ddf0010c96947d2174b852467614b1ad3fd78dfcd385297",
       "transform": {
         "positionMm": [
           0,
@@ -240,7 +240,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-29T03:40:35.903Z",
+  "updatedAt": "2026-09-29T04:11:50.167Z",
   "parameters": {
     "shade": {
       "shade_base_diameter": 114,
@@ -324,7 +324,8 @@
       "body_lamp_headroom": 1,
       "lower_holder_wall": 2.5,
       "body_wire_diameter": 6,
-      "body_wire_z": 13
+      "body_wire_z": 13,
+      "lower_wire_exit_radius": 63
     },
     "join_keys": {
       "key_left_width": 8,
