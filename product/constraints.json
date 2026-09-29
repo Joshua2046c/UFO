@@ -107,5 +107,16 @@
       "source": "user"
     },
     "reference_image": "product/references/uploads/20260929T155207680Z-1-ishot-2026-09-29-11-51-55.png"
+  },
+  "plain_shade": {
+    "same_profile_as": "shade",
+    "cow_cutout": false,
+    "position_mm": [
+      160,
+      0,
+      0
+    ],
+    "position_source": "default",
+    "source": "user"
   }
 }

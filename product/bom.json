@@ -1,6 +1,6 @@
 {
   "bom_ready": true,
-  "requirements_digest": "c8011a8f24c03bc869b23a24e3db1f6c4c174f767746e9e9f98409fd6d335ecc",
+  "requirements_digest": "56dd64811b9ab4735561bc26f8d994ad20b773a94ab3d3711267bfbda187abb4",
   "items": [
     {
       "id": "body",
@@ -53,6 +53,14 @@
       },
       "procurement_status": "user_supplied",
       "notes": "未选择电气替代品；仅验证给定机械包络。"
+    },
+    {
+      "id": "shade_plain",
+      "name": "无镂空绿色备用灯罩",
+      "quantity": 1,
+      "type": "custom_printed",
+      "material": "半透明绿色PETG",
+      "notes": "与奶牛灯罩采用相同基体截面：底径114 mm，锥体高140 mm，插颈长10 mm、外径68 mm，薄壁1.2 mm、颈壁2.5 mm；无奶牛开口。右侧并排展示，为可替换备用件。"
     }
   ],
   "schema_version": 1,

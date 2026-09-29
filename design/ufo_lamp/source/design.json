@@ -72,6 +72,20 @@
         }
       ],
       "dependencies": []
+    },
+    {
+      "id": "shade_plain",
+      "label": "shade_plain",
+      "cells": [
+        {
+          "id": "shade_plain",
+          "target": "shade_plain",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/shade_plain/000-shade_plain.py",
+          "sha256": "3ad758add837e6b3e85df228ab9d0c108520b6c47eb807908e427f9e9d697b6c"
+        }
+      ],
+      "dependencies": []
     }
   ],
   "objects": [
@@ -236,11 +250,38 @@
         ]
       },
       "datums": []
+    },
+    {
+      "id": "shade_plain",
+      "target": "shade_plain",
+      "label": "无镂空绿色灯罩",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "ce33bd2382027cd1d419414b3d6815c36a1a05d4fd95621bda22412ab3633ea6",
+      "transform": {
+        "positionMm": [
+          160,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
     }
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-29T15:54:06.942Z",
+  "updatedAt": "2026-09-29T15:58:32.594Z",
   "parameters": {
     "shade": {
       "shade_base_diameter": 114,
@@ -360,6 +401,19 @@
       "key_right_rib_radius": 0.4,
       "key_right_rib_projection": 0.14,
       "key_right_rib_end_margin": 1
+    },
+    "shade_plain": {
+      "shade_plain_base_diameter": 114,
+      "shade_plain_top_diameter": 76,
+      "shade_plain_height": 140,
+      "shade_plain_wall": 1.2,
+      "shade_plain_foot_height": 3,
+      "shade_plain_foot_width": 2,
+      "shade_plain_spigot_diameter": 68,
+      "shade_plain_spigot_length": 10,
+      "shade_plain_neck_wall": 2.5,
+      "shade_plain_blend_height": 10,
+      "shade_plain_leadin": 0.5
     }
   }
 }

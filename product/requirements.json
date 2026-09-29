@@ -9,7 +9,7 @@
       "source": "user"
     },
     "part_count": {
-      "value": 6,
+      "value": 7,
       "source": "default"
     },
     "lamp_envelope_mm": {
@@ -147,6 +147,10 @@
     },
     "shade_cow_reference": {
       "value": "product/references/uploads/20260929T155207680Z-1-ishot-2026-09-29-11-51-55.png",
+      "source": "user"
+    },
+    "plain_shade": {
+      "value": "额外增加一个与原灯罩同尺寸、无奶牛镂空的灯罩，放在旁边，保留原奶牛灯罩",
       "source": "user"
     }
   },
