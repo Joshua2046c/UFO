@@ -101,6 +101,14 @@
     "internal_details": {
       "value": "none; complete silhouette opening",
       "source": "user"
+    },
+    "outline_details": {
+      "value": "downward tail and udder",
+      "source": "user"
+    },
+    "teat_count": {
+      "value": 2,
+      "source": "default"
     }
   }
 }

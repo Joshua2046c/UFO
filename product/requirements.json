@@ -140,6 +140,10 @@
         "style": "单侧贯穿完整奶牛轮廓"
       },
       "source": "default"
+    },
+    "shade_cow_tail_udder": {
+      "value": "尾巴向下垂，腹部增加与完整镂空轮廓连通的乳房和乳头细节",
+      "source": "user"
     }
   },
   "open_questions": []

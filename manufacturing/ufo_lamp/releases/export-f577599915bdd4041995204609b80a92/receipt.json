@@ -1,30 +1,30 @@
 {
   "designId": "ufo_lamp",
-  "revision": "7a4657877b37ad340ccff941b1e0e423fb1e6a2c9d031da927ba14788a8cc0e1",
+  "revision": "5e5983690abad774dfd31bfeed3fc2b0baee3caefdeda3a67928c0ae14d008e1",
   "schemaVersion": 2,
-  "exportId": "export-2ab50bfa960fd22a8087ceb72a521824",
-  "generatedAt": "2026-09-29T15:13:16.791Z",
-  "designSha256": "7ee94c3aa78f97a02e67fa410317ef52374bdd414c34645ad061b5a44503da5c",
+  "exportId": "export-f577599915bdd4041995204609b80a92",
+  "generatedAt": "2026-09-29T15:48:32.980Z",
+  "designSha256": "823d9e86ab15ca141093b1aaf3c4bb7d342572c2c67327a88688dffa1f39cb9b",
   "role": "lamp_housing",
-  "stateHash": "209854295c76b05ffa861f0e147a2219c0d37c05a5b4e7e388325429dc7d3373",
+  "stateHash": "2ebd070b44665f4fe353133c11e3161af2a05859a27c08568a9d29fb32490d5c",
   "stateManifest": {
     "schemaVersion": 3,
     "designId": "ufo_lamp",
     "role": "lamp_housing",
     "design": {
-      "revision": "7a4657877b37ad340ccff941b1e0e423fb1e6a2c9d031da927ba14788a8cc0e1",
-      "designSha256": "49fcb7a374cc76793b5f20a1512467f6e2b3e5cfa1c3e8d5de9c0cfb0393633e",
-      "manifestSha256": "ddf1bca119d3bb248e5011b8076b992c19e535320e48dedb87b3bbcbd39e2a54",
-      "stepSha256": "77f4a9d172cc59f059f3629c1a9515f5cbfc59c68eb71d1b769d2d53f7303d2d",
+      "revision": "5e5983690abad774dfd31bfeed3fc2b0baee3caefdeda3a67928c0ae14d008e1",
+      "designSha256": "bc91045b11b9c1c092516ccc7c8bcd70f205dc0082c0a8922087fea4ec2bcaa5",
+      "manifestSha256": "6da84a688f2f66178428f438c04828f425b389d5ae451f455f0f7c7db2e968d1",
+      "stepSha256": "2d19c50edc66f73ec2eb11d6ba5871622bcf6824a61a8059b6ee2038e94624b4",
       "pcbReleases": []
     },
     "brief": {
       "path": "design/ufo_lamp/README.md",
-      "sha256": "9aaaefe032a12960f765ff2c6e70985f0dd6a5b3c6dfa5bde8df17c6b9ee8125"
+      "sha256": "1edd2611efe30b0f414abb3993c575c09f934eec4dc202591540cf93e020b69f"
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
-      "artifactContractSha256": "d95114c841f84e709e5564cf5adf911d1e61ac404fa038a86188b1229daa5411",
+      "artifactContractSha256": "661c56ac98324f7c8a82d8d99603fcf9e2eb8700639405bb320dbd2573ac3c09",
       "designRequirementSha256": "b893114da4fc4798206eee982edb5fade9b92b715b228b9eba08c9432fe77263",
       "inputs": []
     },
@@ -34,11 +34,11 @@
         "step"
       ]
     },
-    "stateHash": "209854295c76b05ffa861f0e147a2219c0d37c05a5b4e7e388325429dc7d3373"
+    "stateHash": "2ebd070b44665f4fe353133c11e3161af2a05859a27c08568a9d29fb32490d5c"
   },
   "buildArtifacts": {
-    "manifestSha256": "ddf1bca119d3bb248e5011b8076b992c19e535320e48dedb87b3bbcbd39e2a54",
-    "stepSha256": "77f4a9d172cc59f059f3629c1a9515f5cbfc59c68eb71d1b769d2d53f7303d2d"
+    "manifestSha256": "6da84a688f2f66178428f438c04828f425b389d5ae451f455f0f7c7db2e968d1",
+    "stepSha256": "2d19c50edc66f73ec2eb11d6ba5871622bcf6824a61a8059b6ee2038e94624b4"
   },
   "exportAlgorithm": {
     "version": 1,
@@ -49,7 +49,7 @@
     "body/body": "e61d698c6d4f7585178eee6932ddee7ae1c90e4313e0ba95616191a92d163853",
     "cockpit/cockpit": "fc13a707f7889f9bfe37f34dfe74ba99a7ac17701d269c7ab03aa8ac32b5ed6c",
     "join_keys/join_keys": "e5dbc91c7bfadcdd179c94e8de4c402badc82a70a0ee93abb66e31cdc69b67cf",
-    "shade/shade": "eb2d9d0cc82848b9ff26be3460f0c787a225aed470b3e08af6c5d1913b34db21"
+    "shade/shade": "de4fd7c040ecaeb2b67979e46b25a36b5033ca0162c7b884a750a7e02ba19025"
   },
   "assetHashes": {},
   "shapeHashes": {
@@ -58,7 +58,7 @@
     "cockpit": "8a12603776fc1bd610112a1057c390f52aa47dc9747c2b4586c18469004b25a0",
     "key_left": "4db4317e22f0128a0eb7a0fd2087a7c1e1bdf622d8d02e44de70d96b79b1a2a1",
     "key_right": "336cdd8e52efdbc20ac50b7f35b42796a5b379b9a5ec80b0562d738eff20d543",
-    "shade": "f520c033885c289ffe730b1e4d67b78c5e0efdb08dab3379ccc2109000a6694b"
+    "shade": "93bc1ecb77ec5f3b2a9352982c262d26b9517242905865aa37fc50b2b76fb574"
   },
   "runtime": {
     "manifestHash": "56a1de5d760e9f5c1dd991c57c86f24fbfb7da361b3d55b9d4cb65cdabe66a74",
@@ -69,10 +69,10 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/ufo_lamp/releases/export-2ab50bfa960fd22a8087ceb72a521824/model.step",
+      "path": "manufacturing/ufo_lamp/releases/export-f577599915bdd4041995204609b80a92/model.step",
       "role": "model/step",
-      "sha256": "77f4a9d172cc59f059f3629c1a9515f5cbfc59c68eb71d1b769d2d53f7303d2d",
-      "sizeBytes": 2090282
+      "sha256": "2d19c50edc66f73ec2eb11d6ba5871622bcf6824a61a8059b6ee2038e94624b4",
+      "sizeBytes": 2294034
     }
   ],
   "interference": {
@@ -94,9 +94,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "cde3e00e359a90bf1cf0acc01b6dcc0c",
     "projectId": "b1ce3c41-c13e-47ca-a93b-8c580df61836",
-    "receiptPath": "manufacturing/ufo_lamp/releases/export-2ab50bfa960fd22a8087ceb72a521824/receipt.json",
-    "payloadSha256": "7b83dd2ba8bd58a0b21a0987eb0f2ba592277460c6c9ec2af3064f2488d6b7cc",
-    "mac": "f665332195e34b5cd8aedbfde0b1e6b742c924ef19b2277b3a3e7920173f0acf"
+    "receiptPath": "manufacturing/ufo_lamp/releases/export-f577599915bdd4041995204609b80a92/receipt.json",
+    "payloadSha256": "7ec2f404af2e0d4f2289714581e5ae4dc6b425a4e82d20df6fb3bad3caa8b713",
+    "mac": "b272271942180ceaec7c05084739387f800c2e600aa26faf75a0dbeb3b17e80b"
   },
   "status": "handoff"
 }
