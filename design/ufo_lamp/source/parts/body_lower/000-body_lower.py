@@ -15,7 +15,7 @@ body_lamp_headroom=param("body_lamp_headroom",1.0)
 lower_holder_wall=param("lower_holder_wall",2.5)
 body_wire_diameter=param("body_wire_diameter",6.0)
 body_wire_z=param("body_wire_z",13.0)
-lower_wire_exit_radius=param("lower_wire_exit_radius",63.0)
+lower_wire_exit_radius=param("lower_wire_exit_radius",73.8)
 key_spacing=param("key_spacing",92.0)
 key_socket_width=param("key_socket_width",8.3)
 key_socket_depth=param("key_socket_depth",5.4)
@@ -56,16 +56,20 @@ for i in range(int(lower_thruster_count)):
 for x in [-key_spacing/2,key_spacing/2]:
     body_lower=body_lower+Pos(x,0,(s+lower_socket_pad_base)/2)*Box(lower_socket_pad_width,lower_socket_pad_width,s-lower_socket_pad_base)
     body_lower=body_lower-Pos(x,0,s-key_socket_depth/2)*Box(key_socket_width,key_socket_width,key_socket_depth)
-# Open internal U-groove stops in the annular cavity; the outer rim stays intact.
+# Open internal U-groove stops in the annular cavity.
 route_length=hub+lower_wall
 route_top=seat+LAMP_T+body_lamp_headroom+lower_wall
 body_lower=body_lower-Pos(0,-route_length/2,body_wire_z)*Rot(90,0,0)*Cylinder(body_wire_diameter/2,route_length)
 body_lower=body_lower-Pos(0,-route_length/2,(body_wire_z+route_top)/2)*Box(body_wire_diameter,route_length,route_top-body_wire_z)
-# Downward exit on the underside slope at the user's marked rear location.
-exit_tool=Pos(0,-lower_wire_exit_radius,s/2)*Cylinder(body_wire_diameter/2,s+2*lower_wall)
+# Half-round notch in the lower rim: its circle centre lies on the mating plane.
+# The closed upper rim supplies the flat top; the old underside bore is omitted.
+exit_tool=Pos(0,-lower_wire_exit_radius,s)*Rot(90,0,0)*Cylinder(body_wire_diameter/2,4*lower_wall)
 body_lower=body_lower-exit_tool
 assert len(body_lower.solids())==1
 assert (body_lower & exit_tool).volume < 1e-5
+# A 2.6 mm round lead clears the default 6-wide, 3-deep semicircular opening.
+exit_check=Pos(0,-lower_wire_exit_radius,s-body_wire_diameter/4)*Rot(90,0,0)*Cylinder((body_wire_diameter/2-0.4)/2,4*lower_wall)
+assert (body_lower & exit_check).volume < 1e-5
 # A cable smaller than the nominal 6 mm channel clears the lower route.
 wire_check=Pos(0,-route_length/2,body_wire_z)*Rot(90,0,0)*Cylinder((body_wire_diameter-0.4)/2,route_length)
 assert (body_lower & wire_check).volume < 1e-5

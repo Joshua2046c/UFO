@@ -28,7 +28,7 @@
       "source": "user"
     },
     "wire_route": {
-      "value": "内部保留开放放线凹槽；外部出线孔移至用户标注的下半壳底部斜面，封闭原外缘缺口",
+      "value": "出线口位于下半壳边缘，是向上开放的半圆缺口；封回底部原圆孔，保留内部放线凹槽",
       "source": "user"
     },
     "body_diameter_mm": {
@@ -103,10 +103,11 @@
     },
     "wire_exit_position_mm": {
       "value": {
-        "x": 0,
-        "y": -63,
-        "axis": "z",
-        "diameter": 6
+        "side": "-Y",
+        "circle_center_z": 156,
+        "width": 6,
+        "depth": 3,
+        "axis": "y"
       },
       "source": "default"
     },
