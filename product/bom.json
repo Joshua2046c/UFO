@@ -1,0 +1,44 @@
+{
+  "bom_ready": true,
+  "requirements_digest": "3abcc748b98a991014df870ec080f4d0296ae4754f6567f510e95e0529beafd6",
+  "items": [
+    {
+      "id": "body",
+      "name": "飞船本体",
+      "quantity": 1,
+      "type": "custom_printed",
+      "material": "银灰PETG",
+      "notes": "外径150 mm；61×9 mm灯槽；6 mm线孔；内螺纹72 mm、螺距3 mm。"
+    },
+    {
+      "id": "cockpit",
+      "name": "飞船座舱",
+      "quantity": 1,
+      "type": "custom_printed",
+      "material": "暖黄色PETG",
+      "notes": "外径80 mm，圆顶高34 mm；右旋外牙，与船身旋拧连接。"
+    },
+    {
+      "id": "shade",
+      "name": "绿色底座灯罩",
+      "quantity": 1,
+      "type": "custom_printed",
+      "material": "半透明绿色PETG",
+      "notes": "底径114 mm，高140 mm加10 mm插颈；薄壁1.2 mm，颈壁2.5 mm，带上下走线槽。"
+    },
+    {
+      "id": "lamp",
+      "name": "用户提供的直径60 mm、厚8 mm圆饼灯组（含原配引线和电源）",
+      "quantity": 1,
+      "type": "user_supplied",
+      "envelope_mm": {
+        "diameter": 60,
+        "thickness": 8
+      },
+      "procurement_status": "user_supplied",
+      "notes": "未选择电气替代品；仅验证给定机械包络。"
+    }
+  ],
+  "schema_version": 1,
+  "status": "ready"
+}

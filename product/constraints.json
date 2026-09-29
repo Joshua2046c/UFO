@@ -1,0 +1,34 @@
+{
+  "lamp": {
+    "diameter_mm": 60,
+    "thickness_mm": 8,
+    "pocket_diameter_mm": 61,
+    "pocket_depth_mm": 9,
+    "light_aperture_mm": 56
+  },
+  "cable": {
+    "passage_diameter_mm": 6,
+    "source": "default",
+    "note": "不假设未知连接器可穿过，先穿线再装灯",
+    "neck_notch_mm": {
+      "width": 6,
+      "depth": 7
+    },
+    "bottom_notch_mm": {
+      "width": 6,
+      "height": 6
+    }
+  },
+  "connections": [
+    {
+      "id": "dome_thread",
+      "implementation": "free",
+      "reason": "M72中空盖连接经screwjoint的M2-M8范围检查拒绝，使用bd_warehouse.Thread自由实现真实两半螺纹"
+    },
+    {
+      "id": "shade_insert",
+      "implementation": "free",
+      "reason": "重力落座滑动配合"
+    }
+  ]
+}

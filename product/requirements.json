@@ -1,0 +1,82 @@
+{
+  "requirements": {
+    "product_class": {
+      "value": "mechanical",
+      "source": "default"
+    },
+    "form_factor": {
+      "value": "三件式飞船灯：飞船本体、螺纹座舱、绿色底座灯罩",
+      "source": "user"
+    },
+    "part_count": {
+      "value": 3,
+      "source": "user"
+    },
+    "lamp_envelope_mm": {
+      "value": {
+        "diameter": 60,
+        "thickness": 8
+      },
+      "source": "user"
+    },
+    "closure": {
+      "value": "船身与座舱通过螺旋螺纹连接",
+      "source": "user"
+    },
+    "shade_interface": {
+      "value": "薄壁灯罩上端插入船身；船身落在灯罩肩面上；连接区加厚",
+      "source": "user"
+    },
+    "wire_route": {
+      "value": "灯组处预留穿线洞",
+      "source": "user"
+    },
+    "body_diameter_mm": {
+      "value": 150,
+      "source": "default"
+    },
+    "shade_height_mm": {
+      "value": 140,
+      "source": "default"
+    },
+    "shade_base_diameter_mm": {
+      "value": 114,
+      "source": "default"
+    },
+    "shade_wall_mm": {
+      "value": 1.2,
+      "source": "default"
+    },
+    "shade_spigot_mm": {
+      "value": {
+        "diameter": 68,
+        "length": 10,
+        "wall": 2.5,
+        "radial_clearance": 0.3
+      },
+      "source": "default"
+    },
+    "thread_mm": {
+      "value": {
+        "major_diameter": 72,
+        "pitch": 3,
+        "engagement": 9,
+        "radial_clearance": 0.35
+      },
+      "source": "default"
+    },
+    "wire_hole_mm": {
+      "value": 6,
+      "source": "default"
+    },
+    "manufacturing_method": {
+      "value": "FDM，船身及座舱PETG，灯罩半透明绿色PETG",
+      "source": "default"
+    },
+    "base_board": {
+      "value": "不需要控制板；适配用户指定尺寸的现成圆饼灯组",
+      "source": "default"
+    }
+  },
+  "open_questions": []
+}

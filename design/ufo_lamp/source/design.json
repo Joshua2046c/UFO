@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "replicator-world-z-up",
+  "targets": [
+    {
+      "id": "shade",
+      "label": "shade",
+      "cells": [
+        {
+          "id": "shade",
+          "target": "shade",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/shade/000-shade.py",
+          "sha256": "aacb2f7874f3f16aaa82e91ce5c94b4be32c32df1df3829a4c76d95efdf8934e"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "body",
+      "label": "body",
+      "cells": [
+        {
+          "id": "body",
+          "target": "body",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/body/000-body.py",
+          "sha256": "856b13939838e57aeca8f408ecff2cf01a0ac4089e9e13637ae2be5f40c18774"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "cockpit",
+      "label": "cockpit",
+      "cells": [
+        {
+          "id": "cockpit",
+          "target": "cockpit",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/cockpit/000-cockpit.py",
+          "sha256": "d142efae2274c25afbbd363e0ec3797d62408cf1cf61e2ebd175db37cec193ed"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "shade",
+      "target": "shade",
+      "label": "绿色光束灯罩",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "e14c9c5be2d7a5c54a4f59338ad4cafbf0f6ac42147ff02acba1c4f372f2a209",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "body",
+      "target": "body",
+      "label": "飞船本体",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "6ce48cafadd706e20ffaae62dbea1a6a709563a5dc5d34acf089396dbbb0ca9a",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          140
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "cockpit",
+      "target": "cockpit",
+      "label": "旋拧圆顶座舱",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "0513aceb34c05c2a71b568d858ac7d9cd298e44662520248ba06eec8a0618635",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          172
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-09-29T02:53:54.366Z",
+  "parameters": {
+    "shade": {
+      "shade_base_diameter": 114,
+      "shade_top_diameter": 76,
+      "shade_height": 140,
+      "shade_wall": 1.2,
+      "shade_foot_height": 3,
+      "shade_foot_width": 2,
+      "spigot_diameter": 68,
+      "spigot_length": 10,
+      "shade_neck_wall": 2.5,
+      "shade_blend_height": 10,
+      "shade_leadin": 0.5,
+      "shade_cable_width": 6,
+      "shade_cable_height": 6,
+      "shade_neck_cable_width": 6,
+      "shade_neck_cable_depth": 7
+    },
+    "body": {
+      "body_diameter": 150,
+      "body_height": 32,
+      "body_wall": 2.4,
+      "body_hub_diameter": 80,
+      "body_rim_height": 13,
+      "body_rim_band": 2,
+      "spigot_diameter": 68,
+      "spigot_length": 10,
+      "body_socket_clearance": 0.3,
+      "body_socket_headroom": 0.8,
+      "body_lamp_clearance": 0.5,
+      "body_seat_thickness": 2.2,
+      "body_light_aperture": 56,
+      "body_lamp_headroom": 1,
+      "thread_major": 72,
+      "thread_depth": 1.8,
+      "thread_pitch": 3,
+      "thread_length": 9,
+      "thread_root_width": 2.2,
+      "thread_tip_width": 0.6,
+      "body_thread_clearance": 0.35,
+      "body_thread_axial_clearance": 0.25,
+      "body_wire_diameter": 6,
+      "body_wire_radius": 32,
+      "body_porthole_diameter": 11,
+      "body_porthole_depth": 0.65,
+      "body_porthole_radius": 56,
+      "body_porthole_count": 8
+    },
+    "cockpit": {
+      "cockpit_diameter": 80,
+      "cockpit_height": 34,
+      "cockpit_wall": 2.4,
+      "cockpit_flange_thickness": 2,
+      "cockpit_neck_inner_diameter": 63,
+      "cockpit_leadin": 0.5,
+      "thread_major": 72,
+      "thread_depth": 1.8,
+      "thread_pitch": 3,
+      "thread_length": 9,
+      "thread_root_width": 2.2,
+      "thread_tip_width": 0.6
+    }
+  }
+}

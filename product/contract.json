@@ -1,0 +1,76 @@
+{
+  "version": 2,
+  "artifact_level": "assembly",
+  "deliverable_intent": "printable_part",
+  "summary": "三个部件组成的飞船灯机械外壳",
+  "required_interfaces": [
+    {
+      "id": "lamp_fit",
+      "kind": "internal_fit",
+      "description": "容纳直径60厚8圆饼灯组及穿线孔",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "dome_thread",
+      "kind": "mechanical_connection",
+      "description": "座舱和船身可旋拧螺纹连接",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "shade_insert",
+      "kind": "mechanical_connection",
+      "description": "薄壁灯罩的加厚上端插入船身并肩面支撑",
+      "source": "user_requested",
+      "required": true
+    }
+  ],
+  "external_references": [
+    {
+      "id": "user_images",
+      "source": "user_requested",
+      "description": "三张飞船灯参考图",
+      "path": "product/references/uploads"
+    },
+    {
+      "id": "lamp_envelope",
+      "source": "user_requested",
+      "description": "用户指定灯组直径60 mm厚度8 mm"
+    }
+  ],
+  "assembly_story": {
+    "installation": "穿线，将灯组朝下置于船身环形托边，旋入座舱，将船身套在灯罩上端加厚颈并落到肩面。",
+    "maintenance": "提起船身、逆时针旋开座舱后取出灯组。",
+    "user_access": [
+      "座舱螺纹口",
+      "灯组托槽",
+      "走线孔",
+      "底缘出线缺口"
+    ]
+  },
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "lamp_housing",
+        "design_id": "ufo_lamp",
+        "description": "飞船本体、座舱及绿色灯罩",
+        "delivery_target": "printable_part",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "lamp_fit",
+          "dome_thread",
+          "shade_insert"
+        ],
+        "reference_ids": [
+          "user_images",
+          "lamp_envelope"
+        ]
+      }
+    ]
+  },
+  "open_questions": []
+}
