@@ -94,10 +94,13 @@
     ],
     "tilt_deg": 18,
     "tilt_direction": "head up-right",
-    "bridge_width_mm": 1.2,
     "cut": "front wall only",
     "minimum_solids": "shade remains one solid",
     "source": "default",
-    "angle_source": "user"
+    "angle_source": "user",
+    "internal_details": {
+      "value": "none; complete silhouette opening",
+      "source": "user"
+    }
   }
 }

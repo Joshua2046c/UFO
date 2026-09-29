@@ -15,8 +15,6 @@ shade_cow_height=param("shade_cow_height",24.0)
 shade_cow_center_x=param("shade_cow_center_x",0.0)
 shade_cow_center_z=param("shade_cow_center_z",38.0)
 shade_cow_tilt_deg=param("shade_cow_tilt_deg",18.0)
-shade_cow_bridge_width=param("shade_cow_bridge_width",1.2)
-shade_cow_eye_diameter=param("shade_cow_eye_diameter",1.8)
 br=shade_base_diameter/2
 tr=shade_top_diameter/2
 sr=spigot_diameter/2
@@ -61,24 +59,6 @@ with BuildPart() as cow_cut:
             for segment in outline:
                 Bezier(*[cow_point(p) for p in segment])
         make_face()
-        # Retained coat patch joins the surrounding wall at the back, avoiding an island.
-        patch=[
-            [(-8.5,9.5),(-6,10),(-2.5,10),(-1.5,9)],
-            [(-1.5,9),(-2,7),(-0.5,4),(-1.5,2)],
-            [(-1.5,2),(-3,-0.5),(-7,-0.5),(-8,2)],
-            [(-8,2),(-9,4),(-8,7),(-8.5,9.5)]
-        ]
-        with BuildLine():
-            for segment in patch:
-                Bezier(*[cow_point(p) for p in segment])
-        make_face(mode=Mode.SUBTRACT)
-        # One eye is supported by a stencil bridge to the forehead.
-        eye_x,eye_z=cow_point((11.5,8))
-        root_x,root_z=cow_point((11.5,14.5))
-        with Locations((eye_x,eye_z)):
-            Circle(shade_cow_eye_diameter/2,mode=Mode.SUBTRACT)
-        with Locations((eye_x,(eye_z+root_z)/2)):
-            Rectangle(shade_cow_bridge_width,root_z-eye_z,mode=Mode.SUBTRACT)
     # Plane.XZ normal is -Y: cut the front wall only, leaving the back intact.
     extrude(amount=br+shade_wall)
 cow_tool=Pos(shade_cow_center_x,0,shade_cow_center_z)*Rot(0,-shade_cow_tilt_deg,0)*cow_cut.part

@@ -12,7 +12,7 @@
           "target": "shade",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/shade/000-shade.py",
-          "sha256": "58796c046171243189b95430c7900aeed6060013e0272028cc4c50608413fe08"
+          "sha256": "eb2d9d0cc82848b9ff26be3460f0c787a225aed470b3e08af6c5d1913b34db21"
         }
       ],
       "dependencies": []
@@ -81,7 +81,7 @@
       "label": "绿色光束灯罩",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "22646d571dc3f2490974c62fcb18f2c39c996c6c544160fecdd0aea796bbd813",
+      "shapeHash": "f520c033885c289ffe730b1e4d67b78c5e0efdb08dab3379ccc2109000a6694b",
       "transform": {
         "positionMm": [
           0,
@@ -240,7 +240,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-29T15:04:16.386Z",
+  "updatedAt": "2026-09-29T15:13:16.791Z",
   "parameters": {
     "shade": {
       "shade_base_diameter": 114,

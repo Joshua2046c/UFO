@@ -1,6 +1,6 @@
 {
   "bom_ready": true,
-  "requirements_digest": "d30e6ce42fda0e5f763700393345d365db9aa442cd60865e8b219a38f52a8656",
+  "requirements_digest": "c9efdde30b304524ec14d92472572422f6d913ac1c4c962c04d030da770fc1de",
   "items": [
     {
       "id": "body",
@@ -40,7 +40,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "半透明绿色PETG",
-      "notes": "底径114 mm，高140 mm加10 mm插颈；薄壁1.2 mm，颈壁2.5 mm；完整无缺口底圈。 正面下部增加奶牛镂空，头朝右上18°；图案名义32×24 mm，中心高38 mm，斑块及眼睛与壳相连，背面完整。"
+      "notes": "底径114 mm，高140 mm加10 mm插颈；薄壁1.2 mm，颈壁2.5 mm；完整无缺口底圈。 正面下部增加奶牛镂空，头朝右上18°；图案名义32×24 mm，中心高38 mm，完整轮廓贯穿，无背部斑块或眼睛细节，背面完整。"
     },
     {
       "id": "lamp",

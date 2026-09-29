@@ -126,7 +126,7 @@
       "source": "default"
     },
     "shade_cow_cutout": {
-      "value": "灯罩标注区域增加参考图奶牛造型镂空，头朝右，倾斜18°",
+      "value": "灯罩标注区域保留完整奶牛轮廓镂空，头朝右，倾斜18°；去掉背部斑块、眼睛及其连接细节",
       "source": "user"
     },
     "shade_cow_layout": {
@@ -137,9 +137,7 @@
         "center_x_mm": 0,
         "center_z_mm": 38,
         "tilt_direction": "头向右上方",
-        "bridge_width_mm": 1.2,
-        "eye_diameter_mm": 1.8,
-        "style": "单侧贯穿轮廓，保留有连接的背部斑块与眼睛"
+        "style": "单侧贯穿完整奶牛轮廓"
       },
       "source": "default"
     }
