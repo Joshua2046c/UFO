@@ -12,9 +12,9 @@
       "required": true
     },
     {
-      "id": "dome_thread",
+      "id": "dome_drop_fit",
       "kind": "mechanical_connection",
-      "description": "座舱和船身可旋拧螺纹连接",
+      "description": "驾驶舱罩无螺纹，光滑裙边定位后直接落座，可直接向上取下",
       "source": "user_requested",
       "required": true
     },
@@ -47,12 +47,12 @@
     }
   ],
   "assembly_story": {
-    "installation": "将灯组放入下壳灯座，从上方把引线铺入内部凹槽及后侧边缘方形缺口，插入两方块，确认不夹线后合壳，旋入座舱并落座灯罩。",
+    "installation": "将灯组放入下壳灯座，从上方把引线铺入内部凹槽及后侧边缘方形缺口，插入两方块，确认不夹线后合壳，直接放上座舱罩并落座灯罩。",
     "maintenance": "拔开上下壳，取出方块及灯组，可翻转灯组使发光面向上。",
     "user_access": [
       "上下壳接缝",
       "内部开放走线槽及下半壳边缘方形缺口",
-      "座舱螺纹口"
+      "座舱落座口"
     ]
   },
   "cad": {
@@ -61,14 +61,14 @@
       {
         "role": "lamp_housing",
         "design_id": "ufo_lamp",
-        "description": "飞碟上下壳、两枚连接方块、螺纹座舱和无底部缺口的绿色灯罩",
+        "description": "飞碟上下壳、两枚连接方块、直接落座的座舱罩和无底部缺口的绿色灯罩",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
         ],
         "interface_ids": [
           "lamp_fit",
-          "dome_thread",
+          "dome_drop_fit",
           "shade_insert",
           "body_square_join"
         ],

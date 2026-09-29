@@ -1,4 +1,3 @@
-from bd_warehouse.thread import Thread
 from math import sin, cos, pi
 body_diameter=param("body_diameter",150.0)
 body_height=param("body_height",32.0)
@@ -9,14 +8,8 @@ body_split_height=param("body_split_height",16.0)
 body_lamp_clearance=param("body_lamp_clearance",0.5)
 body_lamp_headroom=param("body_lamp_headroom",1.0)
 body_seat_z=param("body_seat_z",13.0)
-thread_major=param("thread_major",72.0)
-thread_depth=param("thread_depth",1.8)
-thread_pitch=param("thread_pitch",3.0)
-thread_length=param("thread_length",9.0)
-thread_root_width=param("thread_root_width",2.2)
-thread_tip_width=param("thread_tip_width",0.6)
-body_thread_clearance=param("body_thread_clearance",0.35)
-body_thread_axial_clearance=param("body_thread_axial_clearance",0.25)
+cockpit_locator_diameter=param("cockpit_locator_diameter",68.4)
+body_cockpit_clearance=param("body_cockpit_clearance",0.35)
 body_porthole_diameter=param("body_porthole_diameter",11.0)
 body_porthole_depth=param("body_porthole_depth",0.65)
 body_porthole_radius=param("body_porthole_radius",56.0)
@@ -34,7 +27,7 @@ hub=body_hub_diameter/2
 s=body_split_height
 h=body_height
 z=body_rim_height
-bore=thread_major/2-thread_depth+body_thread_clearance
+bore=cockpit_locator_diameter/2+body_cockpit_clearance
 pocket=LAMP_D/2+body_lamp_clearance
 # Closed upper shell; base frame is the waist mating plane.
 pts=[(r,s),(r-3,z+4),(hub+4,h-2),(hub,h),(bore,h),(bore,s),(hub-3,s),(hub-3,h-body_wall-2),(hub+3,h-body_wall-2),(r-6,s)]
@@ -43,9 +36,7 @@ with BuildPart() as upper_build:
         Polygon(*[(x,y-s) for x,y in pts],align=None)
     revolve(axis=Axis.Z)
 body=upper_build.part
-# Existing free hollow cap thread, as qualified by prior M72 kit rejection.
-thread_cutter=Thread(apex_radius=thread_major/2+body_thread_clearance,apex_width=thread_tip_width+2*body_thread_axial_clearance,root_radius=bore,root_width=thread_root_width+2*body_thread_axial_clearance,pitch=thread_pitch,length=thread_length,end_finishes=("square","square"))
-body=body-Pos(0,0,h-thread_length-0.5-s)*thread_cutter
+# Smooth cylindrical locating bore for the lift-off cockpit cover.
 for x in [-key_spacing/2,key_spacing/2]:
     body=body+Pos(x,0,body_socket_pad_height/2)*Box(body_socket_pad_width,body_socket_pad_width,body_socket_pad_height)
     body=body-Pos(x,0,key_socket_depth/2)*Box(key_socket_width,key_socket_width,key_socket_depth)

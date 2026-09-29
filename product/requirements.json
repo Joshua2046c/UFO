@@ -5,7 +5,7 @@
       "source": "default"
     },
     "form_factor": {
-      "value": "飞船本体、螺纹座舱、绿色灯罩三个外观组件；飞船本体由两半壳和两个方块连接",
+      "value": "飞船本体、直接落座的座舱罩、绿色灯罩三个外观组件；飞船本体由两半壳和两个方块连接",
       "source": "user"
     },
     "part_count": {
@@ -20,7 +20,7 @@
       "source": "user"
     },
     "closure": {
-      "value": "船身与座舱通过螺旋螺纹连接",
+      "value": "顶部驾驶舱罩取消螺纹，直接放在飞船本体上，可向上取下",
       "source": "user"
     },
     "shade_interface": {
@@ -53,15 +53,6 @@
         "length": 10,
         "wall": 2.5,
         "radial_clearance": 0.3
-      },
-      "source": "default"
-    },
-    "thread_mm": {
-      "value": {
-        "major_diameter": 72,
-        "pitch": 3,
-        "engagement": 9,
-        "radial_clearance": 0.35
       },
       "source": "default"
     },
@@ -121,6 +112,16 @@
         "diameter_mm": 16,
         "ring_radius_mm": 60,
         "phase_deg": 22.5
+      },
+      "source": "default"
+    },
+    "cockpit_drop_fit_mm": {
+      "value": {
+        "locator_diameter": 68.4,
+        "socket_diameter": 69.1,
+        "insertion": 5,
+        "radial_clearance": 0.35,
+        "leadin": 0.5
       },
       "source": "default"
     }

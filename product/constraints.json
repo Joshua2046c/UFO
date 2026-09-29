@@ -27,9 +27,15 @@
   },
   "connections": [
     {
-      "id": "dome_thread",
+      "id": "dome_drop_fit",
       "implementation": "free",
-      "reason": "M72中空盖连接经screwjoint的M2-M8范围检查拒绝，使用bd_warehouse.Thread自由实现真实两半螺纹"
+      "reason": "用户要求无螺纹直接落座；光滑裙边定位、肩面承托",
+      "locator_diameter_mm": 68.4,
+      "socket_diameter_mm": 69.1,
+      "insertion_mm": 5,
+      "radial_clearance_mm": 0.35,
+      "leadin_mm": 0.5,
+      "fit": "gravity seated sliding fit, no latch"
     },
     {
       "id": "shade_insert",

@@ -26,7 +26,7 @@
           "target": "body",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/body/000-body.py",
-          "sha256": "a8cedd0c05c84e5172630587da87c27863e86a77827ce7efb1905cc03007c051"
+          "sha256": "e61d698c6d4f7585178eee6932ddee7ae1c90e4313e0ba95616191a92d163853"
         }
       ],
       "dependencies": []
@@ -40,7 +40,7 @@
           "target": "cockpit",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/cockpit/000-cockpit.py",
-          "sha256": "d142efae2274c25afbbd363e0ec3797d62408cf1cf61e2ebd175db37cec193ed"
+          "sha256": "fc13a707f7889f9bfe37f34dfe74ba99a7ac17701d269c7ab03aa8ac32b5ed6c"
         }
       ],
       "dependencies": []
@@ -108,7 +108,7 @@
       "label": "飞碟上壳",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "d33af94322b79f948db71f83433dcb6e08ff9df1c7bd8276eb676954d0e0646b",
+      "shapeHash": "07d048b54073e0924bcd41b3218e14af10dff9cfab8ff1c72eafd96dec96da5b",
       "transform": {
         "positionMm": [
           0,
@@ -132,10 +132,10 @@
     {
       "id": "cockpit",
       "target": "cockpit",
-      "label": "旋拧圆顶座舱",
+      "label": "落座圆顶座舱",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "0513aceb34c05c2a71b568d858ac7d9cd298e44662520248ba06eec8a0618635",
+      "shapeHash": "8a12603776fc1bd610112a1057c390f52aa47dc9747c2b4586c18469004b25a0",
       "transform": {
         "positionMm": [
           0,
@@ -240,7 +240,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-29T05:36:18.019Z",
+  "updatedAt": "2026-09-29T05:39:28.294Z",
   "parameters": {
     "shade": {
       "shade_base_diameter": 114,
@@ -287,7 +287,9 @@
       "key_socket_width": 8.3,
       "key_socket_depth": 5.4,
       "body_socket_pad_width": 14,
-      "body_socket_pad_height": 9
+      "body_socket_pad_height": 9,
+      "cockpit_locator_diameter": 68.4,
+      "body_cockpit_clearance": 0.35
     },
     "cockpit": {
       "cockpit_diameter": 80,
@@ -301,7 +303,9 @@
       "thread_pitch": 3,
       "thread_length": 9,
       "thread_root_width": 2.2,
-      "thread_tip_width": 0.6
+      "thread_tip_width": 0.6,
+      "cockpit_locator_diameter": 68.4,
+      "cockpit_neck_length": 5
     },
     "body_lower": {
       "body_diameter": 150,

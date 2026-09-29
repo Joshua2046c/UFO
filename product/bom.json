@@ -1,6 +1,6 @@
 {
   "bom_ready": true,
-  "requirements_digest": "9d63bc7ce59314f537d1901f48ade5008474d127c11558046a4916ef212c72a9",
+  "requirements_digest": "23c31f1d3b7ec1c2d5fb8b97b06fbd8d050f78aa9ac286a478f8ea8f09601b95",
   "items": [
     {
       "id": "body",
@@ -8,7 +8,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "银灰PETG",
-      "notes": "直径150 mm，上壳保留座舱内螺纹及两个方孔插座；原内侧灯组定位环和出线孔移至下壳。"
+      "notes": "直径150 mm，上壳座舱接口改为69.1 mm光滑定位孔，保留两方孔插座。"
     },
     {
       "id": "body_lower",
@@ -32,7 +32,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "半透明暖黄色PETG（上照选用）",
-      "notes": "保留72 mm大径右旋螺纹；灯组翻面时光线朝向座舱，透光效果取决于耗材。"
+      "notes": "直接落座罩；68.4 mm光滑定位裙边，插入5 mm，导入倒角0.5 mm；靠底缘肩面承托，单边间隙0.35 mm，无旋拧或锁止。灯组翻面时朝上透光效果取决于耗材。"
     },
     {
       "id": "shade",
