@@ -10,8 +10,8 @@
   "cable": {
     "passage_diameter_mm": 6,
     "source": "default",
-    "route": "灯座后侧开放U形槽进入内腔，向后铺至下半壳边缘半圆缺口，上壳盖住其平直上沿",
-    "note": "内部槽宽6 mm；边缘半圆宽6 mm深3 mm，理论最大圆线直径3 mm；已检查2.6 mm圆线出口局部包络，实际线材需试装",
+    "route": "灯座后侧开放U形槽进入内腔，向后铺至下半壳边缘方形缺口，上壳盖住其平直上沿",
+    "note": "内部槽宽6 mm；边缘方口6 mm宽4 mm高；已检查3.6 mm圆线出口局部包络，实际线材需试装",
     "channel_width_mm": 6,
     "route_center_z_mm": 153,
     "open_from_top": true,
@@ -21,9 +21,9 @@
       -73.8
     ],
     "exit_axis": "y",
-    "exit_circle_center_z_mm": 156,
     "exit_width_mm": 6,
-    "exit_depth_mm": 3
+    "exit_depth_mm": 4,
+    "exit_top_z_mm": 156
   },
   "connections": [
     {

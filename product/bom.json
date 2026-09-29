@@ -1,6 +1,6 @@
 {
   "bom_ready": true,
-  "requirements_digest": "0317e4a4590c29d010a72ee2afb96091efbace8adcb8c94caba256bb17f75622",
+  "requirements_digest": "9d63bc7ce59314f537d1901f48ade5008474d127c11558046a4916ef212c72a9",
   "items": [
     {
       "id": "body",
@@ -16,7 +16,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "银灰PETG",
-      "notes": "封闭碟底、中央56 mm出光孔；61 mm内径、9 mm高度灯座适配60×8 mm灯组；内部6 mm宽开放走线槽，后侧边缘6 mm宽/3 mm深半圆出线缺口；底部旧圆孔封回；两个方孔插座；保留一体八个直径16 mm半球推进器装饰。"
+      "notes": "封闭碟底、中央56 mm出光孔；61 mm内径、9 mm高度灯座适配60×8 mm灯组；内部6 mm宽开放走线槽，后侧边缘6 mm宽/4 mm高直边方形出线缺口；底部旧圆孔封回；两个方孔插座；保留一体八个直径16 mm半球推进器装饰。"
     },
     {
       "id": "join_keys",
