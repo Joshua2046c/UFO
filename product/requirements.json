@@ -126,14 +126,14 @@
       "source": "default"
     },
     "shade_cow_cutout": {
-      "value": "灯罩标注区域保留完整奶牛轮廓镂空，头朝右，倾斜18°；去掉背部斑块、眼睛及其连接细节",
+      "value": "灯罩使用用户最新黑色奶牛剪影图的完整轮廓镂空，头朝右、倾斜18°，无内部斑块和眼睛",
       "source": "user"
     },
     "shade_cow_layout": {
       "value": {
         "side": "front -Y",
         "nominal_width_mm": 32,
-        "nominal_height_mm": 24,
+        "nominal_height_mm": 28.4556113,
         "center_x_mm": 0,
         "center_z_mm": 38,
         "tilt_direction": "头向右上方",
@@ -142,7 +142,11 @@
       "source": "default"
     },
     "shade_cow_tail_udder": {
-      "value": "尾巴向下垂，腹部增加与完整镂空轮廓连通的乳房和乳头细节",
+      "value": "尾巴、四条腿及腹部乳房轮廓均按最新黑色剪影参考图，采用图中的上翘尾巴",
+      "source": "user"
+    },
+    "shade_cow_reference": {
+      "value": "product/references/uploads/20260929T155207680Z-1-ishot-2026-09-29-11-51-55.png",
       "source": "user"
     }
   },

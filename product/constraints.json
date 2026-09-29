@@ -81,7 +81,7 @@
   "shade_cow_cutout": {
     "nominal_size_mm": [
       32,
-      24
+      28.4556113
     ],
     "center_x_z_mm": [
       0,
@@ -103,12 +103,9 @@
       "source": "user"
     },
     "outline_details": {
-      "value": "downward tail and udder",
+      "value": "traced latest user silhouette: raised tufted tail, four legs, horns, ears, udder",
       "source": "user"
     },
-    "teat_count": {
-      "value": 2,
-      "source": "default"
-    }
+    "reference_image": "product/references/uploads/20260929T155207680Z-1-ishot-2026-09-29-11-51-55.png"
   }
 }
