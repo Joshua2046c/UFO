@@ -1,8 +1,13 @@
 {
   "formatVersion": 4,
   "name": "UFO 灯",
-  "title": "UFO 飞船灯",
-  "summary": "一款可3D打印组装的飞碟造型灯具外壳，用于安装指定灯组，配有圆顶座舱及可替换的奶牛镂空与无镂空绿色锥形灯罩。",
+  "title": "飞碟台灯",
+  "summary": "以飞碟和牵引光束为造型，将科幻场景融入台灯设计，悬浮奶牛的细节增添故事感，需搭配灯光组件",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Miles"
+    }
+  ],
   "artifacts": "rebuild"
 }
