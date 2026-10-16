@@ -45,6 +45,13 @@
       "description": "额外同尺寸无镂空灯罩，与原灯罩使用相同插颈及承托肩面，旁置展示",
       "source": "user_requested",
       "required": true
+    },
+    {
+      "id": "shade_uniform_wall",
+      "kind": "internal_fit",
+      "description": "两款灯罩锥形侧壁以内外平行锥面形成等厚薄壁，沿用下端1.2 mm径向壁厚，顶部薄肩面连接加厚插颈",
+      "source": "user_requested",
+      "required": true
     }
   ],
   "external_references": [
@@ -86,7 +93,8 @@
           "shade_insert",
           "body_square_join",
           "cow_cutout",
-          "plain_shade"
+          "plain_shade",
+          "shade_uniform_wall"
         ],
         "reference_ids": [
           "user_images",

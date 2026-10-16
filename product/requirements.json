@@ -156,6 +156,20 @@
     "shade_cow_mirror": {
       "value": true,
       "source": "user"
+    },
+    "shade_uniform_wall": {
+      "value": "两款灯罩标色锥形侧壁从下到上等厚，以现有下端侧壁厚度为基准",
+      "source": "user"
+    },
+    "shade_wall_definition": {
+      "value": {
+        "radial_mm": 1.2,
+        "normal_mm": 1.1908667015631993,
+        "basis": "原下端侧壁的1.2 mm径向尺寸",
+        "top_shoulder_axial_mm": 1.2,
+        "neck_wall_mm": 2.5
+      },
+      "source": "default"
     }
   },
   "open_questions": []

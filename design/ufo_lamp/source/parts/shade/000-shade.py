@@ -10,7 +10,6 @@ shade_foot_width = param("shade_foot_width",2.0)
 spigot_diameter = param("spigot_diameter",68.0)
 spigot_length = param("spigot_length",10.0)
 shade_neck_wall = param("shade_neck_wall",2.5)
-shade_blend_height = param("shade_blend_height",10.0)
 shade_leadin = param("shade_leadin",0.5)
 shade_cow_width=param("shade_cow_width",32.0)
 shade_cow_height=param("shade_cow_height",19.87703318377484)
@@ -21,12 +20,31 @@ br=shade_base_diameter/2
 tr=shade_top_diameter/2
 sr=spigot_diameter/2
 h=shade_height
-pts=[(br,0),(br,shade_foot_height),(br-shade_foot_width,shade_foot_height),(tr,h),(sr,h),(sr,h+spigot_length-shade_leadin),(sr-shade_leadin,h+spigot_length),(sr-shade_neck_wall,h+spigot_length),(sr-shade_neck_wall,h),(tr-shade_wall,h-shade_blend_height),(br-shade_foot_width-shade_wall,shade_foot_height),(br-shade_foot_width-shade_wall,0)]
+# Keep the inner cone parallel to the outer cone, referenced to the lower wall.
+cone_slope=(br-shade_foot_width-tr)/(h-shade_foot_height)
+shoulder_z=h-shade_wall
+inner_top_radius=tr+cone_slope*(h-shoulder_z)-shade_wall
+pts=[(br,0),(br,shade_foot_height),(br-shade_foot_width,shade_foot_height),(tr,h),(sr,h),(sr,h+spigot_length-shade_leadin),(sr-shade_leadin,h+spigot_length),(sr-shade_neck_wall,h+spigot_length),(sr-shade_neck_wall,shoulder_z),(inner_top_radius,shoulder_z),(br-shade_foot_width-shade_wall,shade_foot_height),(br-shade_foot_width-shade_wall,0)]
 with BuildPart() as bp:
     with BuildSketch(Plane.XZ):
         Polygon(*pts,align=None)
     revolve(axis=Axis.Z)
 shade=bp.part
+# Check actual kernel cross-section areas at five heights before the decorative cut.
+from math import pi, sqrt
+wall_samples=[]
+for fraction in [0.01,0.25,0.5,0.75,0.99]:
+    z=shade_foot_height+fraction*(shoulder_z-shade_foot_height)
+    ro=br-shade_foot_width-cone_slope*(z-shade_foot_height)
+    ring=section(shade,section_by=Plane.XY.offset(z))
+    measured=ro-sqrt(ro*ro-ring.area/pi)
+    assert abs(measured-shade_wall)<1e-5
+    wall_samples.append((round(z,3),round(measured,6)))
+cone_faces=[face for face in shade.faces() if face.geom_type==GeomType.CONE and face.area>10000]
+assert len(cone_faces)==2
+normal_wall=cone_faces[0].distance_to(cone_faces[1])
+assert abs(normal_wall-shade_wall/sqrt(1+cone_slope**2))<1e-5
+print("shade: section z / radial wall mm",wall_samples,"normal wall mm",round(normal_wall,6))
 # Contour traced from the user's angular silhouette, mirrored horizontally.
 # product/references/uploads/20260929T163649070Z-1-ishot-2026-09-30-12-35-28.png
 # Normalized source artwork; preserve its corners and original proportions.

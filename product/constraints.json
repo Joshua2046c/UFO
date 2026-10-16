@@ -122,5 +122,25 @@
     ],
     "position_source": "default",
     "source": "user"
+  },
+  "shade_uniform_wall": {
+    "objects": [
+      "shade",
+      "shade_plain"
+    ],
+    "radial_wall_mm": 1.2,
+    "normal_wall_mm": 1.1908667015631993,
+    "parallel_cone_range_z_mm": [
+      3,
+      138.8
+    ],
+    "top_shoulder_z_mm": [
+      138.8,
+      140
+    ],
+    "neck_wall_mm": 2.5,
+    "reference": "original lower sidewall radial thickness",
+    "source": "user",
+    "implementation_source": "default"
   }
 }

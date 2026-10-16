@@ -12,7 +12,7 @@
           "target": "shade",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/shade/000-shade.py",
-          "sha256": "ab6690e45ffa8e70cb71c0199a1638caf096b00745b487bd427d549d11c9d4aa"
+          "sha256": "d486196da77074cc2af84d5f88e00e57158495e94c75efdba078f5bf7a4d0b01"
         }
       ],
       "dependencies": []
@@ -82,7 +82,7 @@
           "target": "shade_plain",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/shade_plain/000-shade_plain.py",
-          "sha256": "3ad758add837e6b3e85df228ab9d0c108520b6c47eb807908e427f9e9d697b6c"
+          "sha256": "fb94438fa7f2e64f5f0736df680e04f55a0dbf7e482fed8096e7538501209a03"
         }
       ],
       "dependencies": []
@@ -95,7 +95,7 @@
       "label": "绿色光束灯罩",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "0823f699c8e0281bba3b58a7aa023a0b929c51fd7e8c0f094a6281246a23b802",
+      "shapeHash": "0865ef0d80a3f63733be6c0c176d2f27f467c71b0669e502cb4f33d61dac8fe7",
       "transform": {
         "positionMm": [
           0,
@@ -257,7 +257,7 @@
       "label": "无镂空绿色灯罩",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "ce33bd2382027cd1d419414b3d6815c36a1a05d4fd95621bda22412ab3633ea6",
+      "shapeHash": "36a5b884f95fae1fa5217771336bcf268937420928fa23bdbc39eadb77c0381d",
       "transform": {
         "positionMm": [
           160,
@@ -281,7 +281,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-29T16:38:12.739Z",
+  "updatedAt": "2026-10-16T04:41:41.867Z",
   "parameters": {
     "shade": {
       "shade_base_diameter": 114,
