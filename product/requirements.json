@@ -5,11 +5,11 @@
       "source": "default"
     },
     "form_factor": {
-      "value": "飞船本体、直接落座的座舱罩、绿色灯罩三个外观组件；飞船本体由两半壳和两个方块连接",
+      "value": "飞船本体、直接落座的座舱罩、绿色灯罩三个外观组件；飞船本体由上下半壳磁吸连接",
       "source": "user"
     },
     "part_count": {
-      "value": 7,
+      "value": 13,
       "source": "default"
     },
     "lamp_envelope_mm": {
@@ -28,7 +28,7 @@
       "source": "user"
     },
     "wire_route": {
-      "value": "下半壳边缘出线口按标注改为直边方口，向上开放以铺线；底部原圆孔封闭，内部放线槽保留",
+      "value": "后侧边缘方形走线口跨上下壳接缝，上下各占一半；可从分壳处铺线，内部开放走线槽保留",
       "source": "user"
     },
     "body_diameter_mm": {
@@ -50,7 +50,7 @@
     "shade_spigot_mm": {
       "value": {
         "diameter": 68,
-        "length": 10,
+        "length": 4,
         "wall": 2.5,
         "radial_clearance": 0.3
       },
@@ -69,11 +69,11 @@
       "source": "default"
     },
     "body_split": {
-      "value": "飞碟从中间切开两半，由两个内部方块插接连接",
+      "value": "飞碟从中间切开两半，上下盖取消方桩连接，改为磁铁连接",
       "source": "user"
     },
     "split_implementation": {
-      "value": "沿腰线水平分上下壳，采用两枚独立方形插块",
+      "value": "沿腰线水平分上下壳；上下各两个圆形盲槽，两对磁铁在接缝处相吸",
       "source": "default"
     },
     "body_bottom": {
@@ -95,20 +95,24 @@
     "wire_exit_position_mm": {
       "value": {
         "side": "-Y",
-        "top_z": 156,
+        "top_z": 158,
         "width": 6,
         "height": 4,
-        "axis": "y"
+        "axis": "y",
+        "bottom_z": 154,
+        "center_z": 156,
+        "upper_half_height": 2,
+        "lower_half_height": 2
       },
       "source": "default"
     },
     "underside_decor": {
-      "value": "飞船底部环形均布八个半圆推进器装饰",
+      "value": "飞船底部环形均布八个半圆推进器，全部为独立分件",
       "source": "user"
     },
     "underside_decor_geometry": {
       "value": {
-        "shape": "一体凸起半球",
+        "shape": "独立半球加圆柱插接段",
         "diameter_mm": 16,
         "ring_radius_mm": 60,
         "phase_deg": 22.5
@@ -117,11 +121,15 @@
     },
     "cockpit_drop_fit_mm": {
       "value": {
+        "locator_owner": "body",
+        "socket_owner": "cockpit",
         "locator_diameter": 68.4,
         "socket_diameter": 69.1,
         "insertion": 5,
+        "socket_depth": 5.5,
         "radial_clearance": 0.35,
-        "leadin": 0.5
+        "leadin": 0.5,
+        "locator_wall": 2.4
       },
       "source": "default"
     },
@@ -170,6 +178,133 @@
         "neck_wall_mm": 2.5
       },
       "source": "default"
+    },
+    "thruster_connection": {
+      "value": {
+        "stem_length_mm": 1.5,
+        "socket_depth_mm": 1.5,
+        "socket_diametral_clearance_mm": 0.5
+      },
+      "source": "user"
+    },
+    "thruster_connection_defaults": {
+      "value": {
+        "diameter_mm": 16,
+        "socket_diameter_mm": 16.5,
+        "socket_back_wall_mm": 1.2,
+        "retention": "间隙定位，建议少量适用PETG的胶固定",
+        "depth_datum": "原球心所在底面局部切平面，沿圆柱轴线向壳内"
+      },
+      "source": "default"
+    },
+    "lamp_holder_flush": {
+      "value": "灯组承托和定位模组整体下移，定位环顶面与飞碟下半壳边缘齐平",
+      "source": "user"
+    },
+    "lamp_holder_layout_mm": {
+      "value": {
+        "seat_world_z": 147,
+        "holder_top_world_z": 156,
+        "rim_world_z": 156,
+        "internal_wire_center_world_z": 154,
+        "shade_spigot_length": 4
+      },
+      "source": "default"
+    },
+    "cockpit_interface_direction": {
+      "value": "座舱罩底部凸圈切除形成平底；由飞碟上半壳向上形成一圈凸起嵌入座舱内",
+      "source": "user"
+    },
+    "body_edge_split": {
+      "value": "上、下飞碟外缘等厚，接缝位于外缘厚度正中间",
+      "source": "user"
+    },
+    "body_edge_geometry_mm": {
+      "value": {
+        "upper_straight_band_height": 2,
+        "lower_straight_band_height": 2,
+        "radial_wall": 4.8,
+        "upper_bevel_axial_height": 1,
+        "lower_bevel_axial_height": 1,
+        "split_world_z": 156
+      },
+      "source": "default"
+    },
+    "body_edge_height_scale": {
+      "value": 0.5,
+      "source": "user"
+    },
+    "internal_support_cleanup": {
+      "value": {
+        "key_pads": "上下盖磁铁支座与中央圆环之间填实，支座外端圆形，下壳支座底部与外侧锥面修齐",
+        "lower_center_ring": "外圈台阶抬高至与内环顶面齐平",
+        "lower_socket_backing": "移除内侧八个圆盘凸起，改为连续环形壁面加厚"
+      },
+      "source": "user"
+    },
+    "lower_reinforced_wall_mm": {
+      "value": {
+        "normal_thickness": 3.2,
+        "radial_range": [
+          42,
+          70.2
+        ],
+        "minimum_socket_floor": 1.2
+      },
+      "source": "default"
+    },
+    "body_edge_radial_scale": {
+      "value": 2,
+      "source": "user"
+    },
+    "magnet_pockets": {
+      "value": {
+        "count_per_half": 2,
+        "diameter_mm": 7.1,
+        "depth_mm": 1.1
+      },
+      "source": "user"
+    },
+    "magnet_layout": {
+      "value": {
+        "centers_xy_mm": [
+          [
+            -46,
+            0
+          ],
+          [
+            46,
+            0
+          ]
+        ],
+        "seam_world_z_mm": 156,
+        "additional_hole_allowance_mm": 0,
+        "retention": "磁铁粘接固定；装配前核对相对磁极"
+      },
+      "source": "default"
+    },
+    "upper_inner_ledge_flush": {
+      "value": "上盖内圈台阶向下延伸，底面与外圈接合面齐平",
+      "source": "user"
+    },
+    "internal_wire_groove_raise": {
+      "value": "内部走线凹槽槽底抬高，槽深按下盖外缘缺口的两倍设置",
+      "source": "user"
+    },
+    "internal_wire_groove_mm": {
+      "value": {
+        "width": 6,
+        "depth_from_rim": 4,
+        "lower_edge_notch_depth": 2,
+        "bottom_world_z": 152,
+        "raise": 8,
+        "center_world_z": 154
+      },
+      "source": "default"
+    },
+    "internal_wire_groove_shape": {
+      "value": "内侧走线槽改为顶部开放、平底直角的矩形槽",
+      "source": "user"
     }
   },
   "open_questions": []

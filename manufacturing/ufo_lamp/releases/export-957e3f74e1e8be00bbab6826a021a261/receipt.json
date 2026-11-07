@@ -1,0 +1,117 @@
+{
+  "designId": "ufo_lamp",
+  "revision": "50dadf91ed94f5eeb5db0614b0d91727b249135b7e324447fa0e72bb13eca729",
+  "schemaVersion": 2,
+  "exportId": "export-957e3f74e1e8be00bbab6826a021a261",
+  "generatedAt": "2026-10-21T17:35:12.249Z",
+  "designSha256": "f53850973895b4793b62686af462b49ab30a3bb70aa5e29c2b53bdf62f8638c4",
+  "role": "lamp_housing",
+  "stateHash": "b0655bbde88bb5e05c714a886b48bb6f53c79a8faa547c7bd0c44c8ee379c055",
+  "stateManifest": {
+    "schemaVersion": 3,
+    "designId": "ufo_lamp",
+    "role": "lamp_housing",
+    "design": {
+      "revision": "50dadf91ed94f5eeb5db0614b0d91727b249135b7e324447fa0e72bb13eca729",
+      "designSha256": "505928e05c8a81ed10225b7d585a68064997d00983b04b36d10a998e4a0f2bde",
+      "manifestSha256": "22f9c9119d9d3d8752703fe3a19e0612dac38e83f64dd6070c6fc92b500f6645",
+      "stepSha256": "e6097cfc400c95f6bdbd8579d22da27d59d16867738e1e0650b06a8bfd8573c9",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/ufo_lamp/README.md",
+      "sha256": "c8d84ba1e18c493ed01720b18cb83b8a7d0204b4ce41fba98ccae3aa33361cce"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "3bc4e97325317bcd36997a4baf5e1bc7dd75d5aef9849cc77bcaee36c1c49557",
+      "designRequirementSha256": "2236936c61adae00fb7c52717fcd9e250da93f6902ae013c0dfb8ccd38da2c06",
+      "inputs": []
+    },
+    "delivery": {
+      "target": "printable_part",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "b0655bbde88bb5e05c714a886b48bb6f53c79a8faa547c7bd0c44c8ee379c055"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "22f9c9119d9d3d8752703fe3a19e0612dac38e83f64dd6070c6fc92b500f6645",
+    "stepSha256": "e6097cfc400c95f6bdbd8579d22da27d59d16867738e1e0650b06a8bfd8573c9"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "5dd2a543e9cad32f4b7d6303e41a1ed23bd24acea30c3faacc5d72a98b18ff4f"
+  },
+  "sourceHashes": {
+    "body_lower/body_lower": "f60b8c449071a0079d48af8af4fc733469ddbcf80cf4b5fb22cb9555b6319e02",
+    "body/body": "7cf3602e1252a213f1cc64dc2885fba9e47e2d970a2eddd1291d6d1b0c1e58d5",
+    "cockpit/cockpit": "5f100834795a821ef0281e58886434d4928369b9651436c9429f74043f115311",
+    "shade_plain/shade_plain": "fb94438fa7f2e64f5f0736df680e04f55a0dbf7e482fed8096e7538501209a03",
+    "shade/shade": "d486196da77074cc2af84d5f88e00e57158495e94c75efdba078f5bf7a4d0b01",
+    "thruster_1/thruster_1": "02de481485e3820a068a998f113a148767027ad3e1b0c1360640de67e2776703",
+    "thruster_2/thruster_2": "beae02afa75412e4f143a5483aa57dc73e2cd7aa6047a0ebaa58626ed8daaa38",
+    "thruster_3/thruster_3": "8b2770073c508282a36a56a6a78b81961db7202b689d06ef939a2bd5076884c4",
+    "thruster_4/thruster_4": "8c1884625754951c650ee93e3b17b29f6c5fb207fbf08e2e03a121b1b7b1787b",
+    "thruster_5/thruster_5": "a6918376c9852742208a7ad1dff30d97d2deea7fdf8e2818a043dab8d294913c",
+    "thruster_6/thruster_6": "0bafd8e253f2afbead1cae2928da594abe8092cfa52156c3c0627ec0ee89b84d",
+    "thruster_7/thruster_7": "6810f33b7b9b85392f941f6c80e7b69c65c7c9fea06ce4a801cd44e0e9832379",
+    "thruster_8/thruster_8": "98cbc0db84b76d470fb34b0cdf012cb9f1dedd5f629a10b2c6ce30ed95483e7c"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "body": "ea00f7a0d0304c9e4338fc535ea6815c0a9f306cdc2c705ccfde281a5253e627",
+    "body_lower": "fccfd4ce29f0ab4b3b2a39bf5893b2aac0393a7175993ddcd848629919ed3f7b",
+    "cockpit": "934dc1cd9ceada0b1132b193b5bbc8f54eb6863e1509d7588f735a556965cb99",
+    "shade": "af75f8433cba68ad959eac534e7fc4f46911301005e69e30fa05408b9f52f027",
+    "shade_plain": "127d8a3e14706baa4d835dbe7f16da0e5b9a2f5d2c087dbac8af62f22e3cc106",
+    "thruster_1": "56f6ba901b5e47c2efc334c0e2f8ad88bd30e3ca350209c964b4a796f3233938",
+    "thruster_2": "142e9a384094cc57ce1bd0db3a9d8c4121976bbece4d9f6797c3cf0c2e0f6b27",
+    "thruster_3": "ed5d41d8ec480e7b6482ef199fd19c8ba9f2223a36efd4c6aa22129c13f30e9e",
+    "thruster_4": "5df3e4f154d1dbae502facb119c71b98c5cca6b50ff5906738a1064666d51137",
+    "thruster_5": "05750396295f4f6c28d1018d2432ae3889b3fe8ff301426e0848ed2da846bf46",
+    "thruster_6": "63cff2d56e323e796d31fdaaa218b807b4e4bb744cc93b2aaeacc899cb3d35cb",
+    "thruster_7": "3d3fa3760d45ec7de083bc1129b2e31c03579298cb67306f2cc5a2f4174ff48d",
+    "thruster_8": "be21594fc02bd30725416310b3fa247001ca42ba6127512f5d838162e195f789"
+  },
+  "runtime": {
+    "manifestHash": "ab96ab4a8cb2db98edb9ee2d6904f4abce711776fb5a1af03a7266313006c5d2",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "cc86bceb91ba7b9668854891400ce9ca3f1d372a59aa992460df9d8ed25b89f5"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/ufo_lamp/releases/export-957e3f74e1e8be00bbab6826a021a261/model.step",
+      "role": "model/step",
+      "sha256": "e6097cfc400c95f6bdbd8579d22da27d59d16867738e1e0650b06a8bfd8573c9",
+      "sizeBytes": 1843559
+    }
+  ],
+  "interference": {
+    "summary": "No interference across 78 object pairs.",
+    "counts": {
+      "objects": 13,
+      "pairs": 78,
+      "exact": 0,
+      "cached": 19,
+      "interference": 0,
+      "undeclared": 0,
+      "over_budget": 0,
+      "undetermined": 0
+    },
+    "overlaps": []
+  },
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "cde3e00e359a90bf1cf0acc01b6dcc0c",
+    "projectId": "b1ce3c41-c13e-47ca-a93b-8c580df61836",
+    "receiptPath": "manufacturing/ufo_lamp/releases/export-957e3f74e1e8be00bbab6826a021a261/receipt.json",
+    "payloadSha256": "b3a6f8a53b6a3c13361f5139d48fbaaefeb01fe75323d8192039355a5b708d72",
+    "mac": "5ebee028d0a49b82b9d5d327cae32b13116dc676590b779c83bd42d484911bfc"
+  },
+  "status": "handoff"
+}

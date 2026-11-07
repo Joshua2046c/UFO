@@ -5,15 +5,19 @@
     "pocket_diameter_mm": 61,
     "pocket_depth_mm": 9,
     "light_aperture_mm": 56,
-    "mount_owner": "body_lower"
+    "mount_owner": "body_lower",
+    "seat_world_z_mm": 147,
+    "holder_top_world_z_mm": 156,
+    "rim_world_z_mm": 156,
+    "holder_flush_to_rim": true
   },
   "cable": {
     "passage_diameter_mm": 6,
     "source": "default",
-    "route": "灯座后侧开放U形槽进入内腔，向后铺至下半壳边缘方形缺口，上壳盖住其平直上沿",
-    "note": "内部槽宽6 mm；边缘方口6 mm宽4 mm高；已检查3.6 mm圆线出口局部包络，实际线材需试装",
+    "route": "灯座开放矩形槽通向后侧边缘；上下壳各开半缺口，在接缝处拼成方形出线口",
+    "note": "内槽宽6 mm、深4 mm，为下盖边缘2 mm半缺口深度的两倍；合壳外部方口6×4 mm。内槽与出口局部3.6 mm圆线包络检查通过，实际线材和弯曲半径需试装。",
     "channel_width_mm": 6,
-    "route_center_z_mm": 153,
+    "route_center_z_mm": 154,
     "open_from_top": true,
     "internal_groove_open_from_top": true,
     "exit_center_xy_mm": [
@@ -23,50 +27,80 @@
     "exit_axis": "y",
     "exit_width_mm": 6,
     "exit_depth_mm": 4,
-    "exit_top_z_mm": 156
+    "exit_top_z_mm": 158,
+    "exit_bottom_z_mm": 154,
+    "exit_center_z_mm": 156,
+    "upper_half_height_mm": 2,
+    "lower_half_height_mm": 2,
+    "channel_depth_mm": 4,
+    "channel_bottom_world_z_mm": 152,
+    "channel_to_lower_edge_depth_ratio": 2,
+    "channel_check_cable_diameter_mm": 3.6,
+    "channel_check_cable_center_world_z_mm": 154,
+    "channel_shape": "open-top rectangle with flat floor"
   },
   "connections": [
     {
       "id": "dome_drop_fit",
       "implementation": "free",
-      "reason": "用户要求无螺纹直接落座；光滑裙边定位、肩面承托",
+      "reason": "座舱平底；上壳凸圈朝上嵌入，光滑定位、肩面承托",
       "locator_diameter_mm": 68.4,
       "socket_diameter_mm": 69.1,
       "insertion_mm": 5,
       "radial_clearance_mm": 0.35,
       "leadin_mm": 0.5,
-      "fit": "gravity seated sliding fit, no latch"
+      "fit": "gravity seated sliding fit, no latch",
+      "locator_owner": "body",
+      "socket_owner": "cockpit",
+      "socket_depth_mm": 5.5,
+      "locator_wall_mm": 2.4
     },
     {
       "id": "shade_insert",
       "implementation": "free",
-      "reason": "重力落座滑动配合"
+      "reason": "重力落座滑动配合",
+      "insertion_mm": 4,
+      "radial_clearance_mm": 0.3,
+      "axial_headroom_mm": 0.8
     },
     {
-      "id": "body_square_join",
+      "id": "thruster_insert",
       "implementation": "free",
-      "reason": "用户指定两个内部方块连接上下壳",
-      "key_nominal_mm": [
-        8,
-        8,
-        10
-      ],
-      "socket_width_mm": 8.3,
-      "socket_depth_mm": 5.4,
-      "key_centers_mm": [
+      "reason": "用户指定圆柱延长段和带直径旷量的盲孔",
+      "count": 8,
+      "stem_diameter_mm": 16,
+      "stem_length_mm": 1.5,
+      "socket_diameter_mm": 16.5,
+      "socket_depth_mm": 1.5,
+      "radial_clearance_mm": 0.25,
+      "socket_back_wall_mm": 1.2,
+      "depth_datum": "local tangent plane at radius 60 mm; cylinder axis follows underside normal",
+      "retention": "clearance fit with adhesive suggested",
+      "backing": "continuous conical wall, normal thickness 3.2 mm; no individual circular pads"
+    },
+    {
+      "id": "body_magnet_join",
+      "implementation": "free",
+      "reason": "用户指定磁吸连接，上下盖各两个圆形盲孔",
+      "pocket_diameter_mm": 7.1,
+      "pocket_depth_mm": 1.1,
+      "count_per_half": 2,
+      "centers_xy_mm": [
         [
           -46,
-          0,
-          156
+          0
         ],
         [
           46,
-          0,
-          156
+          0
         ]
       ],
-      "key_max_width_mm": 8.28,
-      "fit": "nominal close sliding fit, no positive latch; calibrate physical insertion force"
+      "mating_plane_world_z_mm": 156,
+      "lower_pocket_floor_world_z_mm": 154.9,
+      "upper_pocket_floor_world_z_mm": 157.1,
+      "pocket_back_wall_verified_min_mm": 2.4,
+      "retention": "adhesive; opposing poles face each other",
+      "hardware_note": "四枚圆片磁铁待按实物试配；孔位尺寸直接采用用户指定值，无额外旷量；未指定磁力等级"
     }
   ],
   "underside_decor": {
@@ -74,9 +108,11 @@
     "diameter_mm": 16,
     "ring_radius_mm": 60,
     "phase_deg": 22.5,
-    "integration": "fused into body_lower",
+    "integration": "eight independent printed hemisphere-and-stem parts",
     "source": "default",
-    "count_source": "user"
+    "count_source": "user",
+    "mount_center_world_z_mm": 147.3125,
+    "underside_slope": 0.40625
   },
   "shade_cow_cutout": {
     "nominal_size_mm": [
@@ -142,5 +178,50 @@
     "reference": "original lower sidewall radial thickness",
     "source": "user",
     "implementation_source": "default"
+  },
+  "body_edge": {
+    "split_world_z_mm": 156,
+    "lower_band_world_z_mm": [
+      154,
+      156
+    ],
+    "upper_band_world_z_mm": [
+      156,
+      158
+    ],
+    "radial_wall_mm": 4.8,
+    "bevel_axial_height_each_mm": 1,
+    "source": "default",
+    "symmetry_source": "user",
+    "upper_magnet_pad_height_mm": 10
+  },
+  "internal_support_cleanup": {
+    "filled_bridge_objects": [
+      "body",
+      "body_lower"
+    ],
+    "bridge_y_width_mm": 14,
+    "bridge_radial_extent_mm": [
+      35.8,
+      53
+    ],
+    "lower_ring_outer_diameter_mm": 74,
+    "lower_ring_inner_diameter_mm": 61,
+    "lower_ring_top_world_z_mm": 156,
+    "lower_cone_normal_wall_mm": 3.2,
+    "reinforced_radial_extent_mm": [
+      42,
+      70.2
+    ],
+    "separate_socket_backing_discs": false,
+    "source": "default",
+    "support_shape": "round-ended magnet seats connected to central ring"
+  },
+  "upper_inner_ledge": {
+    "bottom_world_z_mm": 156,
+    "extension_mm": 13.6,
+    "inner_diameter_mm": 63.6,
+    "flush_with": "upper outer rim mating plane",
+    "source": "default"
   }
 }

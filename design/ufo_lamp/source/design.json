@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "units": "mm",
-  "coordinateFrame": "replicator-world-z-up",
+  "coordinateFrame": "makit-world-z-up",
   "targets": [
     {
       "id": "shade",
@@ -26,7 +26,7 @@
           "target": "body",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/body/000-body.py",
-          "sha256": "e61d698c6d4f7585178eee6932ddee7ae1c90e4313e0ba95616191a92d163853"
+          "sha256": "7cf3602e1252a213f1cc64dc2885fba9e47e2d970a2eddd1291d6d1b0c1e58d5"
         }
       ],
       "dependencies": []
@@ -40,7 +40,7 @@
           "target": "cockpit",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/cockpit/000-cockpit.py",
-          "sha256": "fc13a707f7889f9bfe37f34dfe74ba99a7ac17701d269c7ab03aa8ac32b5ed6c"
+          "sha256": "5f100834795a821ef0281e58886434d4928369b9651436c9429f74043f115311"
         }
       ],
       "dependencies": []
@@ -54,24 +54,12 @@
           "target": "body_lower",
           "order": 0,
           "path": "design/ufo_lamp/source/parts/body_lower/000-body_lower.py",
-          "sha256": "841bc4ddd8ed64580e30996fed2d4a2e96a3c268369a0e812233b4062791339a"
+          "sha256": "f60b8c449071a0079d48af8af4fc733469ddbcf80cf4b5fb22cb9555b6319e02"
         }
       ],
-      "dependencies": []
-    },
-    {
-      "id": "join_keys",
-      "label": "join_keys",
-      "cells": [
-        {
-          "id": "join_keys",
-          "target": "join_keys",
-          "order": 0,
-          "path": "design/ufo_lamp/source/parts/join_keys/000-join_keys.py",
-          "sha256": "e5dbc91c7bfadcdd179c94e8de4c402badc82a70a0ee93abb66e31cdc69b67cf"
-        }
-      ],
-      "dependencies": []
+      "dependencies": [
+        "body"
+      ]
     },
     {
       "id": "shade_plain",
@@ -86,6 +74,118 @@
         }
       ],
       "dependencies": []
+    },
+    {
+      "id": "thruster_1",
+      "label": "thruster_1",
+      "cells": [
+        {
+          "id": "thruster_1",
+          "target": "thruster_1",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/thruster_1/000-thruster_1.py",
+          "sha256": "02de481485e3820a068a998f113a148767027ad3e1b0c1360640de67e2776703"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "thruster_2",
+      "label": "thruster_2",
+      "cells": [
+        {
+          "id": "thruster_2",
+          "target": "thruster_2",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/thruster_2/000-thruster_2.py",
+          "sha256": "beae02afa75412e4f143a5483aa57dc73e2cd7aa6047a0ebaa58626ed8daaa38"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "thruster_3",
+      "label": "thruster_3",
+      "cells": [
+        {
+          "id": "thruster_3",
+          "target": "thruster_3",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/thruster_3/000-thruster_3.py",
+          "sha256": "8b2770073c508282a36a56a6a78b81961db7202b689d06ef939a2bd5076884c4"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "thruster_4",
+      "label": "thruster_4",
+      "cells": [
+        {
+          "id": "thruster_4",
+          "target": "thruster_4",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/thruster_4/000-thruster_4.py",
+          "sha256": "8c1884625754951c650ee93e3b17b29f6c5fb207fbf08e2e03a121b1b7b1787b"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "thruster_5",
+      "label": "thruster_5",
+      "cells": [
+        {
+          "id": "thruster_5",
+          "target": "thruster_5",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/thruster_5/000-thruster_5.py",
+          "sha256": "a6918376c9852742208a7ad1dff30d97d2deea7fdf8e2818a043dab8d294913c"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "thruster_6",
+      "label": "thruster_6",
+      "cells": [
+        {
+          "id": "thruster_6",
+          "target": "thruster_6",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/thruster_6/000-thruster_6.py",
+          "sha256": "0bafd8e253f2afbead1cae2928da594abe8092cfa52156c3c0627ec0ee89b84d"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "thruster_7",
+      "label": "thruster_7",
+      "cells": [
+        {
+          "id": "thruster_7",
+          "target": "thruster_7",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/thruster_7/000-thruster_7.py",
+          "sha256": "6810f33b7b9b85392f941f6c80e7b69c65c7c9fea06ce4a801cd44e0e9832379"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "thruster_8",
+      "label": "thruster_8",
+      "cells": [
+        {
+          "id": "thruster_8",
+          "target": "thruster_8",
+          "order": 0,
+          "path": "design/ufo_lamp/source/parts/thruster_8/000-thruster_8.py",
+          "sha256": "98cbc0db84b76d470fb34b0cdf012cb9f1dedd5f629a10b2c6ce30ed95483e7c"
+        }
+      ],
+      "dependencies": []
     }
   ],
   "objects": [
@@ -95,7 +195,7 @@
       "label": "绿色光束灯罩",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "0865ef0d80a3f63733be6c0c176d2f27f467c71b0669e502cb4f33d61dac8fe7",
+      "shapeHash": "d140dbd46005a1ef5bda28081ff9dfb41fd549d5a08962ea50f8df3b8d15f3c7",
       "transform": {
         "positionMm": [
           0,
@@ -122,7 +222,7 @@
       "label": "飞碟上壳",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "07d048b54073e0924bcd41b3218e14af10dff9cfab8ff1c72eafd96dec96da5b",
+      "shapeHash": "b7f121ea4cfae8b279e01b03742a11cfa43bef04b8dfc24ae544eb54318d2d61",
       "transform": {
         "positionMm": [
           0,
@@ -146,10 +246,10 @@
     {
       "id": "cockpit",
       "target": "cockpit",
-      "label": "落座圆顶座舱",
+      "label": "平底落座圆顶",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "8a12603776fc1bd610112a1057c390f52aa47dc9747c2b4586c18469004b25a0",
+      "shapeHash": "c559ae350dd6746a18e8b68fcc99a93c9e3d4ccd8a1ab2bb690fad6762307dd2",
       "transform": {
         "positionMm": [
           0,
@@ -176,7 +276,7 @@
       "label": "飞碟封闭下壳",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "e75f9ea216538ac263c4a5ea2dc373cd18813a4657a20c72a64f40cb08e18a98",
+      "shapeHash": "c4f6006c2e52b6da5bbc1a0f63aade6a7523450ba08142aeccd5b0c55890ead2",
       "transform": {
         "positionMm": [
           0,
@@ -198,66 +298,12 @@
       "datums": []
     },
     {
-      "id": "key_left",
-      "target": "join_keys",
-      "label": "左连接方块",
-      "material": "petg",
-      "kind": "generated",
-      "shapeHash": "4db4317e22f0128a0eb7a0fd2087a7c1e1bdf622d8d02e44de70d96b79b1a2a1",
-      "transform": {
-        "positionMm": [
-          -46,
-          0,
-          156
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "key_right",
-      "target": "join_keys",
-      "label": "右连接方块",
-      "material": "petg",
-      "kind": "generated",
-      "shapeHash": "336cdd8e52efdbc20ac50b7f35b42796a5b379b9a5ec80b0562d738eff20d543",
-      "transform": {
-        "positionMm": [
-          46,
-          0,
-          156
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
       "id": "shade_plain",
       "target": "shade_plain",
       "label": "无镂空绿色灯罩",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "36a5b884f95fae1fa5217771336bcf268937420928fa23bdbc39eadb77c0381d",
+      "shapeHash": "81e074a0cd17d500e6b83bdbd69ba07ab7f80a4cfff4bb8d6462e86d7e17b8f4",
       "transform": {
         "positionMm": [
           160,
@@ -277,11 +323,227 @@
         ]
       },
       "datums": []
+    },
+    {
+      "id": "thruster_1",
+      "target": "thruster_1",
+      "label": "独立推进器 1",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "a6672ff92f593f3e780c334601536479e1440816c80f1f6bdd8d6e420198782d",
+      "transform": {
+        "positionMm": [
+          55.43277195067721,
+          22.961005941905388,
+          147.3125
+        ],
+        "rotationDeg": [
+          -171.16324330090896,
+          20.348354216824205,
+          155.91107853465567
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "thruster_2",
+      "target": "thruster_2",
+      "label": "独立推进器 2",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "d90c2ec4b6b31706cf562586d56cc5b8529b9c0df12ea263109da3f4edc36095",
+      "transform": {
+        "positionMm": [
+          22.96100594190539,
+          55.43277195067721,
+          147.3125
+        ],
+        "rotationDeg": [
+          -159.42757791364852,
+          8.281301442128713,
+          110.99455593815226
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "thruster_3",
+      "target": "thruster_3",
+      "label": "独立推进器 3",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "d362c9d1f73244393b9137b2df150cbfec7825dbc0b5894ad7f8a3a9514e86c5",
+      "transform": {
+        "positionMm": [
+          -22.961005941905384,
+          55.43277195067721,
+          147.3125
+        ],
+        "rotationDeg": [
+          -159.42757791364852,
+          -8.28130144212871,
+          69.00544406184777
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "thruster_4",
+      "target": "thruster_4",
+      "label": "独立推进器 4",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "e5440100ee8f1387d91f56e5d6fa6653c9a9b3ac6b77b5c4f7f2203fee1f5ddb",
+      "transform": {
+        "positionMm": [
+          -55.43277195067721,
+          22.961005941905395,
+          147.3125
+        ],
+        "rotationDeg": [
+          -171.16324330090896,
+          -20.348354216824205,
+          24.08892146534436
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "thruster_5",
+      "target": "thruster_5",
+      "label": "独立推进器 5",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "7469bede07a06bff7c1f5fc02033f923febb271f9865011a356ae19f25a00dcf",
+      "transform": {
+        "positionMm": [
+          -55.432771950677214,
+          -22.96100594190538,
+          147.3125
+        ],
+        "rotationDeg": [
+          171.16324330090896,
+          -20.34835421682421,
+          -24.088921465344335
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "thruster_6",
+      "target": "thruster_6",
+      "label": "独立推进器 6",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "ab2cba2f4bdf6946dbc6187b88315a15a964eee36f38a43423b56ce82c6ae403",
+      "transform": {
+        "positionMm": [
+          -22.96100594190537,
+          -55.432771950677214,
+          147.3125
+        ],
+        "rotationDeg": [
+          159.42757791364852,
+          -8.2813014421287,
+          -69.00544406184778
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "thruster_7",
+      "target": "thruster_7",
+      "label": "独立推进器 7",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "e4b25dfed5e196dc54a0782e79aa765cb13f3278836d33d79eb5cce4f993298e",
+      "transform": {
+        "positionMm": [
+          22.961005941905402,
+          -55.4327719506772,
+          147.3125
+        ],
+        "rotationDeg": [
+          159.42757791364852,
+          8.281301442128713,
+          -110.99455593815226
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "thruster_8",
+      "target": "thruster_8",
+      "label": "独立推进器 8",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "ddf47ada4c0468c2da84348033348fe01a499c1ecb70eaf85c0701a4d00fb520",
+      "transform": {
+        "positionMm": [
+          55.432771950677214,
+          -22.961005941905373,
+          147.3125
+        ],
+        "rotationDeg": [
+          171.16324330090896,
+          20.348354216824205,
+          -155.91107853465567
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
     }
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-10-16T04:41:41.867Z",
+  "updatedAt": "2026-11-07T14:49:03.796Z",
   "parameters": {
     "shade": {
       "shade_base_diameter": 114,
@@ -291,7 +553,7 @@
       "shade_foot_height": 3,
       "shade_foot_width": 2,
       "spigot_diameter": 68,
-      "spigot_length": 10,
+      "spigot_length": 4,
       "shade_neck_wall": 2.5,
       "shade_blend_height": 10,
       "shade_leadin": 0.5,
@@ -332,15 +594,26 @@
       "body_porthole_radius": 56,
       "body_porthole_count": 8,
       "body_split_height": 16,
-      "body_seat_z": 13,
+      "body_seat_z": 7,
       "body_wire_z": 19.5,
       "key_spacing": 92,
       "key_socket_width": 8.3,
       "key_socket_depth": 5.4,
       "body_socket_pad_width": 14,
-      "body_socket_pad_height": 9,
+      "body_socket_pad_height": 10,
       "cockpit_locator_diameter": 68.4,
-      "body_cockpit_clearance": 0.35
+      "body_cockpit_clearance": 0.35,
+      "body_locator_height": 5,
+      "body_locator_wall": 2.4,
+      "body_locator_leadin": 0.5,
+      "body_edge_scale": 0.5,
+      "upper_wire_exit_width": 6,
+      "upper_wire_exit_height": 4,
+      "upper_wire_exit_radius": 73.8,
+      "body_edge_wall": 4.8,
+      "magnet_spacing": 92,
+      "magnet_socket_diameter": 7.1,
+      "magnet_socket_depth": 1.1
     },
     "cockpit": {
       "cockpit_diameter": 80,
@@ -356,7 +629,9 @@
       "thread_root_width": 2.2,
       "thread_tip_width": 0.6,
       "cockpit_locator_diameter": 68.4,
-      "cockpit_neck_length": 5
+      "cockpit_neck_length": 5,
+      "cockpit_socket_clearance": 0.35,
+      "cockpit_socket_depth": 5.5
     },
     "body_lower": {
       "body_diameter": 150,
@@ -365,7 +640,7 @@
       "body_hub_diameter": 80,
       "body_rim_height": 13,
       "spigot_diameter": 68,
-      "spigot_length": 10,
+      "spigot_length": 4,
       "body_socket_clearance": 0.3,
       "body_socket_headroom": 0.8,
       "body_lamp_clearance": 0.5,
@@ -379,28 +654,25 @@
       "body_lamp_headroom": 1,
       "lower_holder_wall": 2.5,
       "body_wire_diameter": 6,
-      "body_wire_z": 13,
+      "body_wire_z": 15,
       "lower_wire_exit_radius": 73.8,
       "lower_thruster_count": 8,
       "lower_thruster_diameter": 16,
       "lower_thruster_ring_radius": 60,
       "lower_thruster_phase_deg": 22.5,
       "lower_wire_exit_width": 6,
-      "lower_wire_exit_height": 4
-    },
-    "join_keys": {
-      "key_left_width": 8,
-      "key_left_length": 10,
-      "key_left_lead_chamfer": 0.5,
-      "key_left_rib_radius": 0.4,
-      "key_left_rib_projection": 0.14,
-      "key_left_rib_end_margin": 1,
-      "key_right_width": 8,
-      "key_right_length": 10,
-      "key_right_lead_chamfer": 0.5,
-      "key_right_rib_radius": 0.4,
-      "key_right_rib_projection": 0.14,
-      "key_right_rib_end_margin": 1
+      "lower_wire_exit_height": 4,
+      "lower_thruster_socket_depth": 1.5,
+      "lower_thruster_socket_clearance": 0.5,
+      "lower_thruster_socket_back_wall": 1.2,
+      "lower_holder_collar_height": 6,
+      "lower_edge_scale": 0.5,
+      "lower_reinforced_wall": 3.2,
+      "lower_reinforcement_outer_radius": 70,
+      "lower_edge_wall": 4.8,
+      "magnet_spacing": 92,
+      "magnet_socket_diameter": 7.1,
+      "magnet_socket_depth": 1.1
     },
     "shade_plain": {
       "shade_plain_base_diameter": 114,
@@ -410,10 +682,42 @@
       "shade_plain_foot_height": 3,
       "shade_plain_foot_width": 2,
       "shade_plain_spigot_diameter": 68,
-      "shade_plain_spigot_length": 10,
+      "shade_plain_spigot_length": 4,
       "shade_plain_neck_wall": 2.5,
       "shade_plain_blend_height": 10,
       "shade_plain_leadin": 0.5
+    },
+    "thruster_1": {
+      "thruster_1_diameter": 16,
+      "thruster_1_stem_length": 1.5
+    },
+    "thruster_2": {
+      "thruster_2_diameter": 16,
+      "thruster_2_stem_length": 1.5
+    },
+    "thruster_3": {
+      "thruster_3_diameter": 16,
+      "thruster_3_stem_length": 1.5
+    },
+    "thruster_4": {
+      "thruster_4_diameter": 16,
+      "thruster_4_stem_length": 1.5
+    },
+    "thruster_5": {
+      "thruster_5_diameter": 16,
+      "thruster_5_stem_length": 1.5
+    },
+    "thruster_6": {
+      "thruster_6_diameter": 16,
+      "thruster_6_stem_length": 1.5
+    },
+    "thruster_7": {
+      "thruster_7_diameter": 16,
+      "thruster_7_stem_length": 1.5
+    },
+    "thruster_8": {
+      "thruster_8_diameter": 16,
+      "thruster_8_stem_length": 1.5
     }
   }
 }

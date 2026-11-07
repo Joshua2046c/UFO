@@ -1,6 +1,6 @@
 {
   "bom_ready": true,
-  "requirements_digest": "903543b56efb92874529b82c8501b2cb84bfb7e886974085cac30af9fbf92a4c",
+  "requirements_digest": "7a891196ce0a84acacc6d173e7f73ed2119f7cbc971d40069df70c2787093ce7",
   "items": [
     {
       "id": "body",
@@ -8,7 +8,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "银灰PETG",
-      "notes": "直径150 mm，上壳座舱接口改为69.1 mm光滑定位孔，保留两方孔插座。"
+      "notes": "外径150 mm；外缘直边高2 mm、径向壁厚4.8 mm，上倒角轴向高1 mm。座舱定位圈Ø68.4×5 mm、壁厚2.4 mm。内部两个圆端磁铁座与中央环连接，中心x=±46 mm、y=0；各开Ø7.1 mm、深1.1 mm盲槽，朝下开放；孔底至少2.4 mm材料已验证。后侧6×2 mm半缺口，与下盖组成6×4 mm走线口。 内圈台阶向下延伸13.6 mm，底面与外圈在z=156 mm齐平，中央通孔Ø63.6 mm。"
     },
     {
       "id": "body_lower",
@@ -16,15 +16,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "银灰PETG",
-      "notes": "封闭碟底、中央56 mm出光孔；61 mm内径、9 mm高度灯座适配60×8 mm灯组；内部6 mm宽开放走线槽，后侧边缘6 mm宽/4 mm高直边方形出线缺口；底部旧圆孔封回；两个方孔插座；保留一体八个直径16 mm半球推进器装饰。"
-    },
-    {
-      "id": "join_keys",
-      "name": "飞碟内部方形连接插块",
-      "quantity": 2,
-      "type": "custom_printed",
-      "material": "PETG",
-      "notes": "两枚独立8×8×10 mm方块，四面0.14 mm细筋，外包络8.28 mm，配8.3 mm方孔；插接定位非倒扣锁止，需试打印校准。"
+      "notes": "封闭碟底，中央Ø56 mm出光孔；Ø61 mm、深9 mm灯座适配Ø60×8 mm灯组，承托面z=147 mm、顶面z=156 mm。内部宽6 mm、深4 mm的平底矩形开放走线槽，槽底z=152 mm、槽中心z=154 mm，后侧6×2 mm半缺口。内部两个圆端磁铁座与中央环连接，中心x=±46 mm、y=0；各开Ø7.1 mm、深1.1 mm盲槽，朝上开放，孔底至少2.4 mm材料已验证；支座底角与外侧锥面修齐。外缘径向壁厚4.8 mm。八个推进器盲孔Ø16.5×1.5 mm，连续锥壁法向3.2 mm，孔底至少1.2 mm。"
     },
     {
       "id": "cockpit",
@@ -32,7 +24,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "半透明暖黄色PETG（上照选用）",
-      "notes": "直接落座罩；68.4 mm光滑定位裙边，插入5 mm，导入倒角0.5 mm；靠底缘肩面承托，单边间隙0.35 mm，无旋拧或锁止。灯组翻面时朝上透光效果取决于耗材。"
+      "notes": "底部无向下凸圈，平整承托面直接落座；内部Ø69.1 mm、深5.5 mm导向孔接收上壳凸圈，单边间隙0.35 mm，无旋拧或锁止。灯组翻面时朝上透光效果取决于耗材。"
     },
     {
       "id": "shade",
@@ -40,7 +32,7 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "半透明绿色PETG",
-      "notes": "底径114 mm，高140 mm加10 mm插颈；薄壁1.2 mm，颈壁2.5 mm；完整底圈。正面奶牛镂空按最新黄底黑色剪影图左右镜像，头朝右上18°，四肢、乳房、下垂尾巴及轮廓转角依原图；默认宽32 mm、高19.88 mm，中心高38 mm，保持原图比例。背面完整。 锥形侧壁内外平行，径向全段1.2 mm（法向约1.191 mm）；顶部承托肩面厚1.2 mm，插颈壁2.5 mm，底圈保留。"
+      "notes": "底径114 mm，高140 mm加4 mm插颈；薄壁1.2 mm，颈壁2.5 mm；完整底圈。正面奶牛镂空按最新黄底黑色剪影图左右镜像，头朝右上18°，四肢、乳房、下垂尾巴及轮廓转角依原图；默认宽32 mm、高19.88 mm，中心高38 mm，保持原图比例。背面完整。 锥形侧壁内外平行，径向全段1.2 mm（法向约1.191 mm）；顶部承托肩面厚1.2 mm，插颈壁2.5 mm，底圈保留。"
     },
     {
       "id": "lamp",
@@ -60,7 +52,39 @@
       "quantity": 1,
       "type": "custom_printed",
       "material": "半透明绿色PETG",
-      "notes": "与奶牛灯罩采用相同基体截面：底径114 mm，锥体高140 mm，插颈长10 mm、外径68 mm，薄壁1.2 mm、颈壁2.5 mm；无奶牛开口。右侧并排展示，为可替换备用件。 锥形侧壁内外平行，径向全段1.2 mm（法向约1.191 mm）；顶部承托肩面厚1.2 mm，插颈壁2.5 mm，底圈保留。"
+      "notes": "与奶牛灯罩采用相同基体截面：底径114 mm，锥体高140 mm，插颈长4 mm、外径68 mm，薄壁1.2 mm、颈壁2.5 mm；无奶牛开口。右侧并排展示，为可替换备用件。 锥形侧壁内外平行，径向全段1.2 mm（法向约1.191 mm）；顶部承托肩面厚1.2 mm，插颈壁2.5 mm，底圈保留。"
+    },
+    {
+      "id": "thrusters",
+      "name": "独立半球推进器（含圆柱插接段）",
+      "quantity": 8,
+      "type": "custom_printed",
+      "material": "银灰PETG",
+      "notes": "半球直径16 mm、高8 mm，背面同轴圆柱直径16 mm、长1.5 mm，总长9.5 mm；各为独立打印件，间隙定位建议粘接。"
+    },
+    {
+      "id": "thruster_adhesive",
+      "name": "适用于PETG的塑料粘接胶",
+      "quantity": 1,
+      "type": "assembly_consumable",
+      "procurement_status": "external_procurement_required",
+      "notes": "少量用于八个推进器的间隙配合固定；选用兼容实际耗材的胶，先在废料测试。未指定品牌。"
+    },
+    {
+      "id": "closure_magnets",
+      "name": "上下盖连接用圆片磁铁（按Ø7.1×1.1 mm槽位试配）",
+      "quantity": 4,
+      "type": "mechanical_hardware",
+      "procurement_status": "external_procurement_required",
+      "notes": "上下各两枚；槽孔尺寸按用户指定值，无额外装配余量。磁铁实际尺寸、公差及磁力等级待实物核对；本次仅建孔位，不导入磁铁模型。先确认两对磁极相吸，再粘接固定，磁铁不得高出接合面。"
+    },
+    {
+      "id": "magnet_adhesive",
+      "name": "兼容PETG与磁铁表面镀层的粘接胶",
+      "quantity": 1,
+      "type": "assembly_consumable",
+      "procurement_status": "external_procurement_required",
+      "notes": "少量固定四枚磁铁；先在废料验证粘接，避免胶层使磁铁高出接缝。"
     }
   ],
   "schema_version": 1,

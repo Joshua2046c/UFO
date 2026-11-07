@@ -2,19 +2,19 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "printable_part",
-  "summary": "上下分壳、双内部方块连接、底部八个半球推进器装饰的飞碟灯",
+  "summary": "上下分壳、两对磁铁连接、底部八个独立半球推进器的飞碟灯",
   "required_interfaces": [
     {
       "id": "lamp_fit",
       "kind": "internal_fit",
-      "description": "下半壳完整灯座适配60×8 mm灯组，内部开放槽通向下半壳边缘方形出线缺口",
+      "description": "下半壳完整灯座适配60×8 mm灯组，承托及定位模组整体下移至定位环顶面与下壳边缘齐平；内部开放槽通向上下壳各半的边缘方形出线口；下壳中央环外侧台阶抬至内环顶面齐平",
       "source": "user_requested",
       "required": true
     },
     {
       "id": "dome_drop_fit",
       "kind": "mechanical_connection",
-      "description": "驾驶舱罩无螺纹，光滑裙边定位后直接落座，可直接向上取下",
+      "description": "座舱罩底部为平整承托面，无向下凸圈；飞碟上半壳向上形成定位凸圈嵌入罩内，无螺纹，直接落座并向上取下",
       "source": "user_requested",
       "required": true
     },
@@ -26,9 +26,9 @@
       "required": true
     },
     {
-      "id": "body_square_join",
+      "id": "body_magnet_join",
       "kind": "mechanical_connection",
-      "description": "两半船身通过两个内部方形插块连接",
+      "description": "取消方桩和方孔，上下壳各两个Ø7.1 mm、深1.1 mm圆形磁铁盲槽，合盖后两两对齐；圆端支座连接中央环，底面无外凸。",
       "source": "user_requested",
       "required": true
     },
@@ -52,6 +52,13 @@
       "description": "两款灯罩锥形侧壁以内外平行锥面形成等厚薄壁，沿用下端1.2 mm径向壁厚，顶部薄肩面连接加厚插颈",
       "source": "user_requested",
       "required": true
+    },
+    {
+      "id": "thruster_insert",
+      "kind": "mechanical_connection",
+      "description": "八个独立半球背面同轴延长1.5 mm；下壳对应1.5 mm深盲孔，孔径比半球直径大0.5 mm；下壳孔背面采用连续加厚环壁，无单独圆盘凸起",
+      "source": "user_requested",
+      "required": true
     }
   ],
   "external_references": [
@@ -68,11 +75,11 @@
     }
   ],
   "assembly_story": {
-    "installation": "将灯组放入下壳灯座，从上方把引线铺入内部凹槽及后侧边缘方形缺口，插入两方块，确认不夹线后合壳，直接放上座舱罩并落座灯罩。",
-    "maintenance": "拔开上下壳，取出方块及灯组，可翻转灯组使发光面向上。",
+    "installation": "先确认四枚磁铁的相对磁极相吸，分别粘入上下壳的四个盲槽且不高出接合面。固定八个独立推进器；灯组放入下壳灯座，引线铺入平底矩形槽与后侧半缺口；对齐两半出线口并磁吸合盖，最后放上座舱罩并落座灯罩。",
+    "maintenance": "分开磁吸上下壳，取出或翻转灯组；磁铁保持粘接在各自槽内。",
     "user_access": [
       "上下壳接缝",
-      "内部开放走线槽及下半壳边缘方形缺口",
+      "内部开放走线槽及上下壳接缝处方形出线口",
       "座舱落座口"
     ]
   },
@@ -82,7 +89,7 @@
       {
         "role": "lamp_housing",
         "design_id": "ufo_lamp",
-        "description": "飞碟上下壳、两枚连接方块、直接落座的座舱罩和无底部缺口的绿色灯罩，另含一个同尺寸无镂空备用灯罩",
+        "description": "磁吸连接的飞碟上下壳、直接落座的座舱罩和无底部缺口的绿色灯罩，另含一个同尺寸无镂空备用灯罩，八个推进器均为独立分件",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
@@ -91,10 +98,11 @@
           "lamp_fit",
           "dome_drop_fit",
           "shade_insert",
-          "body_square_join",
+          "body_magnet_join",
           "cow_cutout",
           "plain_shade",
-          "shade_uniform_wall"
+          "shade_uniform_wall",
+          "thruster_insert"
         ],
         "reference_ids": [
           "user_images",
