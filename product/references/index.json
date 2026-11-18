@@ -224,6 +224,13 @@
       "bytes": 328077,
       "addedAt": "2026-10-21T17:34:21.094Z",
       "share": false
+    },
+    {
+      "file": "uploads/20261118T094025259Z-1-image.png",
+      "sha256": "83176d2d03c77aeeed143ef4ffa5f501d2ce854ef568a7384c377e0549c286ff",
+      "bytes": 1023459,
+      "addedAt": "2026-11-18T09:40:35.470Z",
+      "share": false
     }
   ]
 }
